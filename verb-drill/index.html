@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Romanian irregular-verb drill</title>
+<style>
+  :root {
+    --bg: #fbf7f0;
+    --fg: #2a2a2a;
+    --muted: #6a6a6a;
+    --line: #d8d4cc;
+    --accent: #8c2d2d;
+    --good: #2d8c4d;
+    --bad: #b03030;
+    --pill: #efe9dc;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+  body { max-width: 720px; margin: 0 auto; padding: 18px 16px 64px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .modes { display: flex; gap: 4px; margin-bottom: 16px;
+    border: 1px solid var(--line); border-radius: 10px; padding: 4px; background: #fff; }
+  .modes button { flex: 1; border: 0; background: transparent; padding: 8px 6px;
+    border-radius: 7px; font: inherit; color: var(--fg); cursor: pointer; }
+  .modes button.active { background: var(--accent); color: #fff; }
+  .filters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  .filters label { font-size: 0.88rem; padding: 4px 10px; border: 1px solid var(--line);
+    border-radius: 999px; background: #fff; cursor: pointer; user-select: none; }
+  .filters input { display: none; }
+  .filters input:checked + span { font-weight: 600; }
+  .filters label:has(input:checked) { background: var(--pill); border-color: var(--accent); }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 14px;
+    padding: 22px 18px; margin-bottom: 12px; }
+  .pose { font-size: 1.15rem; color: var(--muted); }
+  .pose .verb { color: var(--accent); font-weight: 600; }
+  .pose .pron { font-weight: 600; color: var(--fg); }
+  .arrow { color: var(--muted); }
+  .answer { font-size: 1.9rem; font-weight: 700; margin: 14px 0 6px;
+    font-feature-settings: "ss01"; }
+  .answer.hidden { color: var(--muted); }
+  .sentence-ro { font-size: 1.15rem; margin-top: 12px; }
+  .sentence-en { color: var(--muted); margin-top: 4px; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  button.btn { font: inherit; padding: 9px 14px; border-radius: 8px;
+    border: 1px solid var(--line); background: #fff; cursor: pointer; }
+  button.btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+  button.btn.audio { padding: 9px 12px; }
+  button.btn:disabled { opacity: 0.4; cursor: default; }
+  .choices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 18px; }
+  @media (max-width: 480px) { .choices { grid-template-columns: repeat(2, 1fr); } }
+  .choices button { font: inherit; padding: 12px 6px; border-radius: 8px;
+    border: 1px solid var(--line); background: #fff; cursor: pointer; }
+  .choices button.good { background: var(--good); color: #fff; border-color: var(--good); }
+  .choices button.bad { background: var(--bad); color: #fff; border-color: var(--bad); }
+  .choices button.reveal { background: var(--pill); }
+  .input-row { margin-top: 16px; }
+  input[type=text] { font: inherit; font-size: 1.2rem; padding: 10px 12px;
+    border: 1px solid var(--line); border-radius: 8px; width: 100%;
+    background: #fff; color: var(--fg); }
+  input[type=text].good { border-color: var(--good); }
+  input[type=text].bad { border-color: var(--bad); }
+  .score { margin-left: auto; color: var(--muted); font-size: 0.9rem; }
+  .footer { display: flex; align-items: center; margin-top: 8px; }
+  .grid-wrap { overflow-x: auto; }
+  table.paradigm { border-collapse: collapse; width: 100%; min-width: 380px; margin: 10px 0 4px; }
+  table.paradigm th, table.paradigm td { border: 1px solid var(--line); padding: 8px 10px;
+    text-align: left; vertical-align: top; }
+  table.paradigm th { background: var(--pill); font-weight: 600; }
+  table.paradigm td .form { font-weight: 700; }
+  table.paradigm td .ex { color: var(--muted); font-size: 0.93rem; display: block; margin-top: 4px; }
+  table.paradigm td button { float: right; margin-left: 6px; padding: 4px 8px;
+    font-size: 0.85rem; border: 1px solid var(--line); border-radius: 6px;
+    background: #fff; cursor: pointer; }
+  .verb-pick { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+  .verb-pick button { font: inherit; padding: 6px 12px; border-radius: 999px;
+    border: 1px solid var(--line); background: #fff; cursor: pointer; }
+  .verb-pick button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .muted { color: var(--muted); }
+  .kbd { font-family: ui-monospace, Menlo, monospace; background: var(--pill);
+    padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+</style>
+</head>
+<body>
+
+<h1>Romanian irregular-verb drill</h1>
+<div class="sub">Present tense — 9 irregular verbs.</div>
+
+<div class="modes">
+  <button id="m-produce" class="active">Produce the form</button>
+  <button id="m-identify">Identify the form</button>
+  <button id="m-grid">Paradigm grid</button>
+</div>
+
+<div id="filter-wrap" class="filters"></div>
+
+<div id="view"></div>
+
+<script>
+const PERSONS = ["1sg", "2sg", "3sg", "1pl", "2pl", "3pl"];
+const PERSON_LABEL = {"1sg":"eu","2sg":"tu","3sg":"el/ea","1pl":"noi","2pl":"voi","3pl":"ei/ele"};
+
+let VERBS = [];
+let ALL_CELLS = [];
+let activeFilter = new Set();
+let mode = "produce";
+let state = null;
+
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function audio(hash) {
+  if (!hash) return null;
+  // bundled build: data URI from window.AUDIO_MAP; served build: file path
+  const src = (window.AUDIO_MAP && window.AUDIO_MAP[hash])
+    || `../audio/${hash}.mp3`;
+  const a = new Audio(src);
+  a.preload = "auto";
+  return a;
+}
+
+function play(hash) {
+  const a = audio(hash);
+  if (a) a.play().catch(() => {});
+}
+
+function strip(s) {
+  // accent + case-insensitive comparison for typed answers
+  return s.normalize("NFD").replace(/[̀-ͯ]/g, "")
+          .replace(/ș/g, "s").replace(/ț/g, "t")
+          .replace(/[\s.,?!]/g, "")
+          .toLowerCase();
+}
+
+function currentCells() {
+  if (activeFilter.size === 0) return ALL_CELLS;
+  return ALL_CELLS.filter(c => activeFilter.has(c._verb));
+}
+
+// ---------- mode: produce the form ----------
+function renderProduce() {
+  const view = document.getElementById("view");
+  const pool = currentCells();
+  if (!pool.length) { view.innerHTML = `<p class="muted">No verbs selected.</p>`; return; }
+  if (!state || state.mode !== "produce") {
+    state = { mode: "produce", queue: shuffle([...pool]), i: 0, score: {right:0,total:0} };
+  }
+  const cell = state.queue[state.i % state.queue.length];
+  view.innerHTML = `
+    <div class="card">
+      <div class="pose">
+        <span class="verb">${cell._verb}</span> <span class="muted">— ${cell._gloss}</span><br>
+        <span class="pron">${cell.pronoun}</span> <span class="arrow">→</span>
+        <span class="muted" style="font-size:0.92em">(${cell.person})</span>
+      </div>
+      <div class="input-row">
+        <input id="ans" type="text" autocomplete="off" autocapitalize="off"
+          spellcheck="false" placeholder="type the form…">
+      </div>
+      <div class="answer hidden" id="reveal">…</div>
+      <div id="example" style="display:none">
+        <div class="sentence-ro" id="ex-ro"></div>
+        <div class="sentence-en" id="ex-en"></div>
+      </div>
+      <div class="row" id="actions">
+        <button class="btn primary" id="check">Check</button>
+        <button class="btn" id="show">Show</button>
+        <button class="btn audio" id="play-form" disabled>▶ form</button>
+        <button class="btn audio" id="play-sent" disabled>▶ sentence</button>
+      </div>
+      <div class="footer">
+        <span class="muted">Enter = check / next · <span class="kbd">?</span> = show</span>
+        <span class="score">${state.score.right}/${state.score.total}</span>
+      </div>
+    </div>`;
+
+  const inp = document.getElementById("ans");
+  const reveal = document.getElementById("reveal");
+  const ex = document.getElementById("example");
+  const playForm = document.getElementById("play-form");
+  const playSent = document.getElementById("play-sent");
+  const checkBtn = document.getElementById("check");
+  const showBtn = document.getElementById("show");
+  let revealed = false;
+
+  function doReveal(scored) {
+    revealed = true;
+    reveal.textContent = cell.form;
+    reveal.classList.remove("hidden");
+    document.getElementById("ex-ro").textContent = cell.sentence_ro;
+    document.getElementById("ex-en").textContent = cell.sentence_en;
+    ex.style.display = "block";
+    playForm.disabled = !cell.form_audio;
+    playSent.disabled = !cell.sentence_audio;
+    if (cell.form_audio) play(cell.form_audio);
+    checkBtn.textContent = "Next →";
+    showBtn.disabled = true;
+    if (scored !== null) state.score.total += 1;
+    if (scored === true) state.score.right += 1;
+  }
+
+  function advance() {
+    state.i += 1;
+    if (state.i % state.queue.length === 0) state.queue = shuffle([...pool]);
+    renderProduce();
+  }
+
+  inp.focus();
+  inp.addEventListener("input", () => inp.classList.remove("good", "bad"));
+  checkBtn.addEventListener("click", () => {
+    if (revealed) { advance(); return; }
+    const ok = strip(inp.value) === strip(cell.form);
+    inp.classList.add(ok ? "good" : "bad");
+    doReveal(ok);
+  });
+  showBtn.addEventListener("click", () => doReveal(null));
+  playForm.addEventListener("click", () => play(cell.form_audio));
+  playSent.addEventListener("click", () => play(cell.sentence_audio));
+  inp.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") { e.preventDefault(); checkBtn.click(); }
+    else if (e.key === "?" && !inp.value) { e.preventDefault(); showBtn.click(); }
+  });
+}
+
+// ---------- mode: identify the form ----------
+function renderIdentify() {
+  const view = document.getElementById("view");
+  const pool = currentCells();
+  if (!pool.length) { view.innerHTML = `<p class="muted">No verbs selected.</p>`; return; }
+  if (!state || state.mode !== "identify") {
+    state = { mode: "identify", queue: shuffle([...pool]), i: 0, score: {right:0,total:0} };
+  }
+  const cell = state.queue[state.i % state.queue.length];
+  view.innerHTML = `
+    <div class="card">
+      <div class="pose">
+        <span class="verb">${cell._verb}</span> <span class="muted">— ${cell._gloss}</span>
+      </div>
+      <div class="answer">${cell.form}
+        <button class="btn audio" id="play-form" style="vertical-align:middle;margin-left:8px"
+          ${cell.form_audio ? "" : "disabled"}>▶</button>
+      </div>
+      <div class="muted">Which person?</div>
+      <div class="choices" id="choices">
+        ${PERSONS.map(p => `<button data-p="${p}">${PERSON_LABEL[p]}<br><span class="muted" style="font-size:0.8em">${p}</span></button>`).join("")}
+      </div>
+      <div id="example" style="display:none;margin-top:14px">
+        <div class="sentence-ro" id="ex-ro"></div>
+        <div class="sentence-en" id="ex-en"></div>
+        <div class="row">
+          <button class="btn audio" id="play-sent" ${cell.sentence_audio?"":"disabled"}>▶ sentence</button>
+          <button class="btn primary" id="next">Next →</button>
+        </div>
+      </div>
+      <div class="footer"><span class="score">${state.score.right}/${state.score.total}</span></div>
+    </div>`;
+
+  const ex = document.getElementById("example");
+  const choicesEl = document.getElementById("choices");
+  let answered = false;
+  // forms repeat (1sg = 3pl for many of these); accept either as correct
+  const correctSet = new Set(
+    pool.filter(c => c._verb === cell._verb && c.form === cell.form).map(c => c.person)
+  );
+
+  function advance() {
+    state.i += 1;
+    if (state.i % state.queue.length === 0) state.queue = shuffle([...pool]);
+    renderIdentify();
+  }
+
+  document.getElementById("play-form").addEventListener("click", () => play(cell.form_audio));
+  choicesEl.querySelectorAll("button").forEach(b => {
+    b.addEventListener("click", () => {
+      if (answered) return;
+      answered = true;
+      const picked = b.dataset.p;
+      const ok = correctSet.has(picked);
+      state.score.total += 1;
+      if (ok) state.score.right += 1;
+      // mark all correct options green; mark wrong pick red
+      choicesEl.querySelectorAll("button").forEach(bb => {
+        if (correctSet.has(bb.dataset.p)) bb.classList.add("good");
+        else if (bb === b) bb.classList.add("bad");
+      });
+      document.getElementById("ex-ro").textContent = cell.sentence_ro;
+      document.getElementById("ex-en").textContent = cell.sentence_en;
+      ex.style.display = "block";
+      if (cell.sentence_audio) play(cell.sentence_audio);
+      document.getElementById("play-sent").addEventListener("click", () => play(cell.sentence_audio));
+      document.getElementById("next").addEventListener("click", advance);
+    });
+  });
+}
+
+// ---------- mode: paradigm grid ----------
+let gridVerb = null;
+function renderGrid() {
+  const view = document.getElementById("view");
+  const pool = currentCells();
+  const verbs = [...new Set(pool.map(c => c._verb))];
+  if (!verbs.length) { view.innerHTML = `<p class="muted">No verbs selected.</p>`; return; }
+  if (!gridVerb || !verbs.includes(gridVerb)) gridVerb = verbs[0];
+  const cells = pool.filter(c => c._verb === gridVerb);
+  const meta = VERBS.find(v => v.infinitive === gridVerb);
+  view.innerHTML = `
+    <div class="verb-pick">
+      ${verbs.map(v => `<button data-v="${v}" class="${v===gridVerb?"active":""}">${v}</button>`).join("")}
+    </div>
+    <div class="card">
+      <div class="pose"><span class="verb">${gridVerb}</span> <span class="muted">— ${meta.gloss_en}</span></div>
+      <div class="grid-wrap">
+      <table class="paradigm">
+        <thead><tr><th>person</th><th>form</th></tr></thead>
+        <tbody>
+          ${cells.map(c => `
+            <tr>
+              <td><span class="form">${PERSON_LABEL[c.person]}</span><br>
+                  <span class="muted" style="font-size:0.85em">${c.person}</span></td>
+              <td>
+                <button data-h="${c.form_audio}" ${c.form_audio?"":"disabled"}>▶ form</button>
+                <button data-h="${c.sentence_audio}" ${c.sentence_audio?"":"disabled"}>▶ sentence</button>
+                <span class="form">${c.form}</span>
+                <span class="ex">${c.sentence_ro}<br><span class="muted">${c.sentence_en}</span></span>
+              </td>
+            </tr>`).join("")}
+        </tbody>
+      </table>
+      </div>
+    </div>`;
+  view.querySelectorAll(".verb-pick button").forEach(b => {
+    b.addEventListener("click", () => { gridVerb = b.dataset.v; renderGrid(); });
+  });
+  view.querySelectorAll("table button").forEach(b => {
+    b.addEventListener("click", () => play(b.dataset.h));
+  });
+}
+
+// ---------- filters ----------
+function renderFilters() {
+  const wrap = document.getElementById("filter-wrap");
+  wrap.innerHTML = VERBS.map(v => `
+    <label><input type="checkbox" value="${v.infinitive}" ${activeFilter.has(v.infinitive)?"checked":""}>
+      <span>${v.infinitive}</span></label>`).join("")
+    + `<label><input type="checkbox" id="all-on" ${activeFilter.size===0?"checked":""}>
+        <span>all</span></label>`;
+  wrap.querySelectorAll("input").forEach(inp => {
+    inp.addEventListener("change", () => {
+      if (inp.id === "all-on") {
+        activeFilter = new Set();
+      } else {
+        if (inp.checked) activeFilter.add(inp.value);
+        else activeFilter.delete(inp.value);
+      }
+      state = null;       // reset queue
+      renderFilters();
+      route();
+    });
+  });
+}
+
+function route() {
+  if (mode === "produce") renderProduce();
+  else if (mode === "identify") renderIdentify();
+  else renderGrid();
+}
+
+function setMode(m) {
+  mode = m;
+  state = null;
+  ["produce","identify","grid"].forEach(x => {
+    document.getElementById("m-"+x).classList.toggle("active", x === m);
+  });
+  route();
+}
+
+async function load() {
+  // bundled build: window.EMBEDDED_DATA holds the data.jsonl text inline
+  const txt = window.EMBEDDED_DATA
+    || await fetch("data.jsonl").then(r => r.text());
+  VERBS = txt.split("\n").filter(Boolean).map(l => JSON.parse(l));
+  ALL_CELLS = VERBS.flatMap(v =>
+    v.cells.map(c => ({ ...c, _verb: v.infinitive, _gloss: v.gloss_en })));
+  renderFilters();
+  document.getElementById("m-produce").addEventListener("click", () => setMode("produce"));
+  document.getElementById("m-identify").addEventListener("click", () => setMode("identify"));
+  document.getElementById("m-grid").addEventListener("click", () => setMode("grid"));
+  route();
+}
+load();
+</script>
+
+</body>
+</html>
