@@ -5,8 +5,9 @@ Source files live in:
   - ../verb-drill/         (verb-drill/index.html and data.jsonl)
   - ../poem-somnoroase/    (poem-somnoroase/index.html and data.json)
   - ../number-drill/       (number-drill/index.html and data.jsonl)
+  - ../little-words/       (little-words/index.html and data.jsonl)
   - ../audio/              (shared audio cache; site/audio/ holds only the
-                            mp3s referenced by the three tools)
+                            mp3s referenced by the tools)
 
 Published to a separate public repo via:
   git subtree push --prefix=site <public-remote> main
