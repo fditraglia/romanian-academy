@@ -97,7 +97,7 @@
 
 <div class="modes">
   <button id="m-produce" class="active">Produce</button>
-  <button id="m-identify">Identify</button>
+  <button id="m-recognize">Recognize</button>
   <button id="m-ref">Reference</button>
 </div>
 
@@ -229,21 +229,20 @@ function renderProduce() {
   });
 }
 
-// ---------- mode: identify ----------
-function renderIdentify() {
+// ---------- mode: recognize (read/hear the Romanian → pick the value) ----------
+function renderRecognize() {
   const view = document.getElementById("view");
   const pool = currentPool();
   if (!pool.length) { view.innerHTML = `<p class="muted">No categories selected.</p>`; return; }
-  if (!state || state.mode !== "identify") {
-    state = { mode: "identify", queue: shuffle([...pool]), i: 0, score: {right: 0, total: 0} };
+  if (!state || state.mode !== "recognize") {
+    state = { mode: "recognize", queue: shuffle([...pool]), i: 0, score: {right: 0, total: 0} };
   }
   const item = state.queue[state.i % state.queue.length];
 
-  // distractors from same category, including the correct prompt
+  // distractors from same category, including the correct one
   const sameCat = ALL_ITEMS.filter(x => x._cat === item._cat);
   let choices = sameCat;
-  if (sameCat.length > 10) {
-    // big categories: 5 random distractors + correct
+  if (sameCat.length > 6) {
     const others = sameCat.filter(x => x.key !== item.key);
     choices = shuffle([...others]).slice(0, 5);
     choices.push(item);
@@ -252,15 +251,16 @@ function renderIdentify() {
 
   view.innerHTML = `
     <div class="card">
-      <div class="pose"><span class="cat">${item._catLabel}</span> · listen and pick the prompt</div>
-      <div class="row">
-        <button class="btn primary" id="play-audio" ${item.audio?"":"disabled"}>▶ hear it</button>
+      <div class="pose"><span class="cat">${item._catLabel}</span> · read it, pick the value</div>
+      <div class="prompt">${item.ro}
+        <button class="btn icon" id="play-audio" ${item.audio?"":"disabled"}
+          title="hear it" style="font-size:0.85rem;padding:4px 11px;vertical-align:middle">▶</button>
       </div>
+      ${item.ro_alt ? `<div class="alts">also: ${item.ro_alt.join(", ")}</div>` : ""}
       <div class="choices" id="choices">
         ${choices.map(c => `<button data-k="${c.key}">${c.prompt}</button>`).join("")}
       </div>
       <div id="reveal" style="display:none;margin-top:16px">
-        <div class="answer" id="ans-ro">${item.ro}</div>
         ${item.note ? `<div class="note">${item.note}</div>` : ""}
         <div class="row">
           <button class="btn primary" id="next">Next →</button>
@@ -269,9 +269,6 @@ function renderIdentify() {
       <div class="footer"><span class="score">${state.score.right}/${state.score.total}</span></div>
     </div>`;
 
-  // auto-play on render
-  if (item.audio) setTimeout(() => play(item.audio), 100);
-
   const reveal = document.getElementById("reveal");
   const choicesEl = document.getElementById("choices");
   let answered = false;
@@ -279,7 +276,7 @@ function renderIdentify() {
   function advance() {
     state.i += 1;
     if (state.i % state.queue.length === 0) state.queue = shuffle([...pool]);
-    renderIdentify();
+    renderRecognize();
   }
 
   document.getElementById("play-audio").addEventListener("click", () => play(item.audio));
@@ -334,12 +331,16 @@ function renderRef() {
 // ---------- filters ----------
 function renderFilters() {
   const wrap = document.getElementById("filter-wrap");
-  wrap.innerHTML = DATA.map(d => `
+  wrap.innerHTML =
+    `<label><input type="checkbox" id="all-on" ${activeCats.size===0?"checked":""}>
+      <span>All</span></label>` +
+    DATA.map(d => `
     <label><input type="checkbox" value="${d.category}" ${activeCats.has(d.category)?"checked":""}>
       <span>${d.label}</span></label>`).join("");
   wrap.querySelectorAll("input").forEach(inp => {
     inp.addEventListener("change", () => {
-      if (inp.checked) activeCats.add(inp.value);
+      if (inp.id === "all-on") activeCats = new Set();
+      else if (inp.checked) activeCats.add(inp.value);
       else activeCats.delete(inp.value);
       state = null;
       renderFilters();
@@ -350,14 +351,14 @@ function renderFilters() {
 
 function route() {
   if (mode === "produce") renderProduce();
-  else if (mode === "identify") renderIdentify();
+  else if (mode === "recognize") renderRecognize();
   else renderRef();
 }
 
 function setMode(m) {
   mode = m;
   state = null;
-  ["produce","identify","ref"].forEach(x => {
+  ["produce","recognize","ref"].forEach(x => {
     document.getElementById("m-"+x).classList.toggle("active", x === m);
   });
   route();
@@ -371,7 +372,7 @@ async function load() {
     d.items.map(it => ({...it, _cat: d.category, _catLabel: d.label})));
   renderFilters();
   document.getElementById("m-produce").addEventListener("click", () => setMode("produce"));
-  document.getElementById("m-identify").addEventListener("click", () => setMode("identify"));
+  document.getElementById("m-recognize").addEventListener("click", () => setMode("recognize"));
   document.getElementById("m-ref").addEventListener("click", () => setMode("ref"));
   route();
 }
