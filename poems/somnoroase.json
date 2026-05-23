@@ -92,5 +92,79 @@
         "line_audio": "44ff252e89fe2d0f"
       }
     ]
+  ],
+  "glosses": [
+    {
+      "ro": "somnoroase",
+      "en": "sleepy, drowsy (f. pl.)",
+      "note": "Lat. somnus 'sleep'; cf. somnolent"
+    },
+    {
+      "ro": "păsărele",
+      "en": "little birds",
+      "note": "diminutive of pasăre; Lat. passer 'sparrow'"
+    },
+    {
+      "ro": "cuiburi",
+      "en": "nests",
+      "note": "pl. of cuib"
+    },
+    {
+      "ro": "se adună",
+      "en": "gather, come together",
+      "note": "Lat. adunare (ad + unus)"
+    },
+    {
+      "ro": "rămurele",
+      "en": "little branches",
+      "note": "diminutive of ramură; Lat. ramus"
+    },
+    {
+      "ro": "izvoarele",
+      "en": "the springs, water-sources"
+    },
+    {
+      "ro": "suspină",
+      "en": "sigh",
+      "note": "Lat. suspirare; cf. suspire"
+    },
+    {
+      "ro": "codrul",
+      "en": "the forest, woods"
+    },
+    {
+      "ro": "tace",
+      "en": "falls silent, is hushed",
+      "note": "Lat. tacere 'be silent'; cf. tacit"
+    },
+    {
+      "ro": "să se culce",
+      "en": "to lie down (to sleep)",
+      "note": "Lat. collocare 'to lay down'; cf. couch"
+    },
+    {
+      "ro": "fie-ți",
+      "en": "may they be to you",
+      "note": "subjunctive of a fi 'to be' + dative -ți"
+    },
+    {
+      "ro": "îngerii",
+      "en": "the angels",
+      "note": "Lat. angelus"
+    },
+    {
+      "ro": "feerie",
+      "en": "fairy enchantment, magic",
+      "note": "from French féerie"
+    },
+    {
+      "ro": "mândra",
+      "en": "the proud / lovely one (here: the moon)"
+    },
+    {
+      "ro": "armonie",
+      "en": "harmony",
+      "note": "Lat. harmonia (from Greek)"
+    }
   ]
 }

@@ -20,6 +20,10 @@
     system-ui, sans-serif; }
   body { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
   header { margin-bottom: 28px; text-align: center; }
+  .flag { display: inline-block; width: 48px; height: 32px; border-radius: 4px;
+    margin-bottom: 12px;
+    background: linear-gradient(90deg,#002B7F 0 33.34%,#FCD116 33.34% 66.67%,#CE1126 66.67% 100%);
+    box-shadow: 0 0 0 1px rgba(0,0,0,.08); }
   h1 { font-size: 2rem; margin: 0 0 8px; color: var(--accent); }
   .sub { color: var(--muted); font-size: 1.05rem; }
   main { display: flex; flex-direction: column; gap: 14px; }
@@ -29,8 +33,11 @@
     transition: background 0.15s, border-color 0.15s; }
   .tool:hover { background: var(--pill); border-color: var(--accent); }
   .tool h2 { margin: 0 0 6px; font-size: 1.25rem; color: var(--accent); }
+  .tool h2 em { font-style: italic; }
   .tool p { margin: 0; color: var(--fg); }
-  .tool em { color: var(--accent); font-style: italic; }
+  .tool .by { color: var(--muted); font-style: normal; }
+  .group-label { color: var(--muted); font-size: 0.85rem; text-transform: uppercase;
+    letter-spacing: 0.06em; margin: 10px 2px 0; }
   footer { margin-top: 36px; color: var(--muted); font-size: 0.88rem;
     text-align: center; line-height: 1.6; }
   footer a { color: var(--accent); text-decoration: none; }
@@ -40,6 +47,7 @@
 <body>
 
 <header>
+  <span class="flag"></span>
   <h1>Romanian.academy</h1>
   <p class="sub">Browser-based tools for English speakers learning
     Romanian.</p>
@@ -50,12 +58,6 @@
     <h2>Verb drill</h2>
     <p>Romanian&rsquo;s irregular present-tense verbs, drilled across the
     full paradigm with audio and example sentences.</p>
-  </a>
-
-  <a class="tool" href="/poem-somnoroase/">
-    <h2>Somnoroase p&#259;s&#259;rele</h2>
-    <p>Eminescu&rsquo;s lullaby poem with synced audio and progressive
-    blank-out for memorization.</p>
   </a>
 
   <a class="tool" href="/number-drill/">
@@ -69,6 +71,18 @@
     <p>The connectives, time words, prepositions, and idioms that hold
     sentences together &mdash; <em>deci</em>, <em>dup&#259;</em>,
     <em>acum</em>, <em>de fapt</em> &mdash; with examples and audio.</p>
+  </a>
+
+  <div class="group-label">Poems</div>
+  <a class="tool" href="/poems/?poem=iarna">
+    <h2><em>Iarna pe uliță</em><span class="by"> &middot; George Coșbuc</span></h2>
+    <p>Synced reading with per-line audio, a vocabulary panel,
+    and progressive blank-out for memorization.</p>
+  </a>
+  <a class="tool" href="/poems/?poem=somnoroase">
+    <h2><em>Somnoroase păsărele</em><span class="by"> &middot; Mihai Eminescu</span></h2>
+    <p>Synced reading with per-line audio, a vocabulary panel,
+    and progressive blank-out for memorization.</p>
   </a>
 </main>
 

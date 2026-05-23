@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'><rect width='1' height='2' fill='%23002B7F'/><rect x='1' width='1' height='2' fill='%23FCD116'/><rect x='2' width='1' height='2' fill='%23CE1126'/></svg>">
-<title>Somnoroase păsărele — memorize</title>
+<title>Poem — memorize</title>
 <style>
   :root {
     --bg: #fbf7f0;
@@ -15,6 +15,7 @@
     --pill: #efe9dc;
     --active: #fff4d6;
     --active-border: #c89a2d;
+    --latin: #5a4a8c;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg);
@@ -51,6 +52,23 @@
   .line-num { color: var(--muted); font-size: 0.8rem; min-width: 1.5em;
     text-align: right; font-variant-numeric: tabular-nums; }
   .line-text { font-size: 1.1rem; line-height: 1.55; }
+  /* collapsed glossary panel — present but quiet; clean view stays default */
+  details.vocab { margin-top: 16px; background: #fff; border: 1px solid var(--line);
+    border-radius: 12px; overflow: hidden; }
+  details.vocab > summary { cursor: pointer; padding: 12px 16px; font-size: 0.95rem;
+    color: var(--accent); font-weight: 600; list-style: none; user-select: none; }
+  details.vocab > summary::-webkit-details-marker { display: none; }
+  details.vocab > summary::before { content: "▸ "; }
+  details.vocab[open] > summary::before { content: "▾ "; }
+  details.vocab > summary .count { color: var(--muted); font-weight: 400; }
+  .gloss-list { padding: 0 16px 8px; }
+  .gloss { padding: 9px 0; border-top: 1px solid var(--line); }
+  .gloss:first-child { border-top: 0; }
+  .gloss .g-ro { font-weight: 600; }
+  .gloss .g-en { color: var(--fg); }
+  .gloss .g-note { color: var(--latin); font-size: 0.88rem; font-style: italic;
+    margin-top: 2px; }
+  .gloss .g-note::before { content: "⮌ "; font-style: normal; }
   .hint { color: var(--muted); font-size: 0.85rem; margin-top: 14px;
     line-height: 1.5; }
   .kbd { font-family: ui-monospace, Menlo, monospace; background: var(--pill);
@@ -58,6 +76,8 @@
 </style>
 </head>
 <body>
+<div style="max-width:720px;margin:0 auto 14px;display:flex;align-items:center;gap:9px;padding:8px 16px 10px;border-bottom:1px solid #d8d4cc;font:15px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;"><a href="/" style="display:flex;align-items:center;gap:9px;text-decoration:none;color:#8c2d2d;font-weight:600;"><span style="display:inline-block;width:21px;height:14px;border-radius:2px;background:linear-gradient(90deg,#002B7F 0 33.34%,#FCD116 33.34% 66.67%,#CE1126 66.67% 100%);box-shadow:0 0 0 1px rgba(0,0,0,.08);"></span>Romanian.academy</a><a href="/" style="margin-left:auto;text-decoration:none;color:#8c2d2d;">All tools &rarr;</a></div>
+
 
 <header>
   <h1 id="title">…</h1>
@@ -78,6 +98,11 @@
 
 <div class="poem" id="poem"></div>
 
+<details class="vocab" id="vocab" hidden>
+  <summary>Vocabular <span class="count" id="vocab-count"></span></summary>
+  <div class="gloss-list" id="gloss-list"></div>
+</details>
+
 <div class="hint">
   <span class="kbd">Space</span> play/pause ·
   <span class="kbd">F</span>/<span class="kbd">I</span>/<span class="kbd">B</span> obscuration ·
@@ -94,9 +119,19 @@ let mode = "full";
 let activeLine = -1;
 let singleLineEnd = null;  // legacy fallback for lines w/o a per-line clip
 
+function poemSlug() {
+  const p = new URLSearchParams(location.search).get("poem");
+  // accept only a safe slug; default to somnoroase
+  return (p && /^[a-z0-9-]+$/.test(p)) ? p : "somnoroase";
+}
+
 function audioSrc(hash) {
   return (window.AUDIO_MAP && window.AUDIO_MAP[hash])
     || `../audio/${hash}.mp3`;
+}
+
+function esc(s) {
+  return (s || "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 }
 
 function obscure(text, m) {
@@ -142,11 +177,23 @@ function renderPoem() {
   applyActiveHighlight();
 }
 
+function renderGlosses() {
+  const glosses = DATA.glosses || [];
+  const panel = document.getElementById("vocab");
+  if (!glosses.length) { panel.hidden = true; return; }
+  panel.hidden = false;
+  document.getElementById("vocab-count").textContent = `(${glosses.length})`;
+  document.getElementById("gloss-list").innerHTML = glosses.map(g => `
+    <div class="gloss">
+      <span class="g-ro">${esc(g.ro)}</span> — <span class="g-en">${esc(g.en)}</span>
+      ${g.note ? `<div class="g-note">${esc(g.note)}</div>` : ""}
+    </div>`).join("");
+}
+
 function applyActiveHighlight() {
   LINES.forEach((l, i) => {
     if (l.el) l.el.classList.toggle("active", i === activeLine);
   });
-  // ensure active line is visible on small screens
   if (activeLine >= 0 && LINES[activeLine].el) {
     const r = LINES[activeLine].el.getBoundingClientRect();
     if (r.top < 80 || r.bottom > window.innerHeight - 40) {
@@ -190,18 +237,15 @@ function togglePlay() {
 function playLine(i) {
   stopLineAudio();
   const line = LINES[i];
-  // Sync the whole-poem cursor to this line so a subsequent ▶ resumes here.
   audio.pause();
   audio.currentTime = line.start;
   singleLineEnd = null;
   activeLine = i;
   applyActiveHighlight();
   if (line.line_audio) {
-    // Per-line clip: fresh, clean start/end, no boundary slop.
     lineAudio = new Audio(audioSrc(line.line_audio));
     lineAudio.play();
   } else {
-    // Fallback: seek inside the whole-poem audio and auto-pause at line end.
     singleLineEnd = line.end - 0.05;
     audio.play();
   }
@@ -224,12 +268,12 @@ function setMode(m) {
 
 async function load() {
   DATA = window.EMBEDDED_DATA
-    || await fetch("data.json").then(r => r.json());
+    || await fetch(`${poemSlug()}.json`).then(r => r.json());
+  document.title = (DATA.title || "Poem") + " — memorize";
   document.getElementById("title").textContent = DATA.title || "(untitled)";
   document.getElementById("author").textContent = DATA.author || "";
   document.getElementById("dur").textContent = fmtTime(DATA.duration_s);
 
-  // build flat line list with end-times
   let li = 0;
   DATA.stanzas.forEach(stanza => {
     stanza.forEach(c => {
@@ -265,12 +309,10 @@ async function load() {
   });
 
   renderPoem();
+  renderGlosses();
 }
 load();
 </script>
 
-<footer style="max-width:720px;margin:40px auto 12px;padding-top:16px;text-align:center;border-top:1px solid #d8d4cc;">
-<a href="/" style="color:#8c2d2d;text-decoration:none;font:15px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;">&larr; All tools</a>
-</footer>
 </body>
 </html>

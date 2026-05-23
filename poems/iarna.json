@@ -1,0 +1,849 @@
+{
+  "title": "Iarna pe uliță",
+  "author": "George Coșbuc",
+  "audio_hash": "05554abc36dfd85d",
+  "duration_s": 228.32,
+  "stanzas": [
+    [
+      {
+        "line": "A-nceput de ieri să cadă",
+        "start_s": 0.06,
+        "line_audio": "6d136985baf66394"
+      },
+      {
+        "line": "Câte-un fulg, acum a stat,",
+        "start_s": 1.48,
+        "line_audio": "bd5d1cc04aa7cccd"
+      },
+      {
+        "line": "Norii s-au mai răzbunat",
+        "start_s": 3.35,
+        "line_audio": "1dfe43ac3a7dd42e"
+      },
+      {
+        "line": "Spre apus, dar stau grămadă",
+        "start_s": 5.37,
+        "line_audio": "5534614cb4b9ec91"
+      },
+      {
+        "line": "Peste sat.",
+        "start_s": 7.46,
+        "line_audio": "7880d466dd282650"
+      }
+    ],
+    [
+      {
+        "line": "Nu e soare, dar e bine,",
+        "start_s": 8.2,
+        "line_audio": "e9fe3683b2bdc9e4"
+      },
+      {
+        "line": "Și pe râu e numai fum.",
+        "start_s": 10.13,
+        "line_audio": "ffd5294ac8febb16"
+      },
+      {
+        "line": "Vântu-i liniștit acum,",
+        "start_s": 11.55,
+        "line_audio": "c01df0138927a0aa"
+      },
+      {
+        "line": "Dar năvalnic vuiet vine",
+        "start_s": 14.09,
+        "line_audio": "e2fe32f2ee95d2db"
+      },
+      {
+        "line": "De pe drum.",
+        "start_s": 15.82,
+        "line_audio": "3d1914a9beed6014"
+      }
+    ],
+    [
+      {
+        "line": "Sunt copii. Cu multe sănii,",
+        "start_s": 16.84,
+        "line_audio": "d853bce24f40a41b"
+      },
+      {
+        "line": "De pe coastă vin țipând",
+        "start_s": 19.32,
+        "line_audio": "0eff84946a65c35b"
+      },
+      {
+        "line": "Și se-mping și sar râzând;",
+        "start_s": 21.16,
+        "line_audio": "076867db10720d9e"
+      },
+      {
+        "line": "Prin zăpadă fac mătănii;",
+        "start_s": 23.8,
+        "line_audio": "6ef724ad1de5b25d"
+      },
+      {
+        "line": "Vrând-nevrând.",
+        "start_s": 25.65,
+        "line_audio": "80baf243107d05b4"
+      }
+    ],
+    [
+      {
+        "line": "Gură fac ca roata morii;",
+        "start_s": 28.03,
+        "line_audio": "77721d025bb70aa1"
+      },
+      {
+        "line": "Și de-a valma se pornesc,",
+        "start_s": 29.7,
+        "line_audio": "3a389d6b9473aae1"
+      },
+      {
+        "line": "Cum prin gard se gâlcevesc",
+        "start_s": 31.7,
+        "line_audio": "9dd5c4433b034617"
+      },
+      {
+        "line": "Vrăbii gureșe, când norii",
+        "start_s": 33.54,
+        "line_audio": "616ecfc72720767b"
+      },
+      {
+        "line": "Ploi vestesc.",
+        "start_s": 35.54,
+        "line_audio": "3640cb0350d93e2e"
+      }
+    ],
+    [
+      {
+        "line": "Cei mai mari acum, din sfadă,",
+        "start_s": 36.82,
+        "line_audio": "c8a71944ab05d0a3"
+      },
+      {
+        "line": "Stau pe-ncăierate puși;",
+        "start_s": 39.3,
+        "line_audio": "f8f0fd2faea7fc78"
+      },
+      {
+        "line": "Cei mai mici, de foame-aduși,",
+        "start_s": 41.74,
+        "line_audio": "d4e785289b343cfd"
+      },
+      {
+        "line": "Se scâncesc și plâng grămadă",
+        "start_s": 44.0,
+        "line_audio": "8a142fdf50bd5109"
+      },
+      {
+        "line": "Pe la uși.",
+        "start_s": 46.35,
+        "line_audio": "8402e6cfa46f0674"
+      }
+    ],
+    [
+      {
+        "line": "Colo-n colț acum răsare",
+        "start_s": 46.69,
+        "line_audio": "d29800a6ac215b95"
+      },
+      {
+        "line": "Un copil, al nu știu cui,",
+        "start_s": 49.45,
+        "line_audio": "0ec11f56b307706b"
+      },
+      {
+        "line": "Largi de-un cot sunt pașii lui,",
+        "start_s": 51.45,
+        "line_audio": "1d7c033738f61554"
+      },
+      {
+        "line": "Iar el mic, căci pe cărare",
+        "start_s": 53.94,
+        "line_audio": "1c7d7afa28f2cd2c"
+      },
+      {
+        "line": "Parcă nu-i.",
+        "start_s": 56.42,
+        "line_audio": "67940a1355182077"
+      }
+    ],
+    [
+      {
+        "line": "Haina-i măturând pământul",
+        "start_s": 56.65,
+        "line_audio": "da6a81441a940635"
+      },
+      {
+        "line": "Și-o târăște-abia, abia:",
+        "start_s": 59.24,
+        "line_audio": "a53a5f978fc8e963"
+      },
+      {
+        "line": "Cinci ca el încap în ea,",
+        "start_s": 62.12,
+        "line_audio": "426cbe58f59d1b02"
+      },
+      {
+        "line": "Să mai bată, soro, vântul",
+        "start_s": 63.74,
+        "line_audio": "ab4db40874f60f9d"
+      },
+      {
+        "line": "Dac-o vrea!",
+        "start_s": 65.48,
+        "line_audio": "b729db8500fc66a7"
+      }
+    ],
+    [
+      {
+        "line": "El e sol precum se vede,",
+        "start_s": 67.85,
+        "line_audio": "f6266bf4a1766de8"
+      },
+      {
+        "line": "Mă-sa l-a trimis în sat,",
+        "start_s": 69.38,
+        "line_audio": "46d34bdeb6c3f744"
+      },
+      {
+        "line": "Vezi de-aceea-i încruntat,",
+        "start_s": 71.22,
+        "line_audio": "49567be2b757b375"
+      },
+      {
+        "line": "Și s-avântă, și se crede",
+        "start_s": 73.06,
+        "line_audio": "58a7910f63876559"
+      },
+      {
+        "line": "Că-i bărbat;",
+        "start_s": 74.6,
+        "line_audio": "b3e9ac517cf7f435"
+      }
+    ],
+    [
+      {
+        "line": "Cade-n brânci și se ridică",
+        "start_s": 77.41,
+        "line_audio": "ddf178208d2e9af2"
+      },
+      {
+        "line": "Dând pe ceafă puțintel",
+        "start_s": 79.3,
+        "line_audio": "f2e097b1758f4ff5"
+      },
+      {
+        "line": "Toată lâna unui miel:",
+        "start_s": 81.1,
+        "line_audio": "b8a99788dd793af0"
+      },
+      {
+        "line": "O căciulă mai voinică",
+        "start_s": 82.51,
+        "line_audio": "a035fc59c261e8f0"
+      },
+      {
+        "line": "Decât el.",
+        "start_s": 84.31,
+        "line_audio": "f8027d176c4759a2"
+      }
+    ],
+    [
+      {
+        "line": "Și tot vine, tot înoată,",
+        "start_s": 85.27,
+        "line_audio": "3978adfc3059268c"
+      },
+      {
+        "line": "Dar deodată cu ochi vii,",
+        "start_s": 88.27,
+        "line_audio": "2dde8c03352d2ae7"
+      },
+      {
+        "line": "Stă pe loc - să mi te ții!",
+        "start_s": 89.95,
+        "line_audio": "cceb9463fdf80b9f"
+      },
+      {
+        "line": "Colo, zgomotoasa gloată,",
+        "start_s": 93.35,
+        "line_audio": "d9d1068848ffe378"
+      },
+      {
+        "line": "De copii!",
+        "start_s": 95.27,
+        "line_audio": "d6733cfc941d9f4a"
+      }
+    ],
+    [
+      {
+        "line": "El degrabă-n jur chitește",
+        "start_s": 96.16,
+        "line_audio": "e47e99db35f4d736"
+      },
+      {
+        "line": "Vrun ocol, căci e pierdut,",
+        "start_s": 98.43,
+        "line_audio": "0d4c76092d24899c"
+      },
+      {
+        "line": "Dar copiii l-au văzut!",
+        "start_s": 100.53,
+        "line_audio": "805505fa05dd4346"
+      },
+      {
+        "line": "Toată ceata năvălește",
+        "start_s": 103.45,
+        "line_audio": "9ef3c9b2c1b9578d"
+      },
+      {
+        "line": "Pe-ntrecut.",
+        "start_s": 103.45,
+        "line_audio": "91a7b4700aa851cb"
+      }
+    ],
+    [
+      {
+        "line": "- \"Uite-i, mă, căciula, frate,",
+        "start_s": 104.86,
+        "line_audio": "38a68dfed51ff587"
+      },
+      {
+        "line": "Mare cât o zi de post -",
+        "start_s": 108.53,
+        "line_audio": "7ecd7f6e03413321"
+      },
+      {
+        "line": "Aoleu, ce urs mi-a fost!",
+        "start_s": 110.54,
+        "line_audio": "9595d441e4205a41"
+      },
+      {
+        "line": "Au sub dânsa șapte sate",
+        "start_s": 112.99,
+        "line_audio": "76d2eac9bacce254"
+      },
+      {
+        "line": "Adăpost!",
+        "start_s": 112.99,
+        "line_audio": "b538a894741f1dfe"
+      }
+    ],
+    [
+      {
+        "line": "Unii-l iau grăbit la vale,",
+        "start_s": 116.18,
+        "line_audio": "05b79f27d341e17b"
+      },
+      {
+        "line": "Alții-n glumă parte-i țin -",
+        "start_s": 118.12,
+        "line_audio": "4d88ee70ee931d09"
+      },
+      {
+        "line": "Uite-i, fără pic de vin",
+        "start_s": 119.84,
+        "line_audio": "338a9a53468967e8"
+      },
+      {
+        "line": "S-au jurat să-mbete-n cale",
+        "start_s": 121.96,
+        "line_audio": "779a6d22a0c37432"
+      },
+      {
+        "line": "Pe creștin!",
+        "start_s": 124.49,
+        "line_audio": "0db73b465436b9c1"
+      }
+    ],
+    [
+      {
+        "line": "Vine-o babă-ncet pe stradă",
+        "start_s": 126.63,
+        "line_audio": "577e8e46413953f6"
+      },
+      {
+        "line": "În cojocul rupt al ei",
+        "start_s": 129.02,
+        "line_audio": "b1f7ae4d9c0ff710"
+      },
+      {
+        "line": "Și încins cu sfori de tei.",
+        "start_s": 130.5,
+        "line_audio": "80d7bce9bf51cb00"
+      },
+      {
+        "line": "Stă pe loc acum să vadă",
+        "start_s": 132.88,
+        "line_audio": "aeb1e2f8be4f080d"
+      },
+      {
+        "line": "Și ea ce-i.",
+        "start_s": 135.11,
+        "line_audio": "3ba07ca1ee55f4fb"
+      }
+    ],
+    [
+      {
+        "line": "S-oțărăște rău bătrâna",
+        "start_s": 136.24,
+        "line_audio": "15aa5ab2f9dbc8fa"
+      },
+      {
+        "line": "Pentru micul Barba-cot.",
+        "start_s": 138.4,
+        "line_audio": "a1114489fc44254b"
+      },
+      {
+        "line": "- \"Ați înnebunit de tot -",
+        "start_s": 139.33,
+        "line_audio": "2a690feb6b07a6b3"
+      },
+      {
+        "line": "Puiul mamii, dă-mi tu mâna",
+        "start_s": 142.48,
+        "line_audio": "a751fa6d93bbb41f"
+      },
+      {
+        "line": "Să te scot!",
+        "start_s": 144.67,
+        "line_audio": "ea7b8fefd331cb8b"
+      }
+    ],
+    [
+      {
+        "line": "Cică vrei să stingi cu paie",
+        "start_s": 145.98,
+        "line_audio": "5dc81dc1291b361d"
+      },
+      {
+        "line": "Focul când e-n clăi cu fân,",
+        "start_s": 147.81,
+        "line_audio": "5b43460908c0ebd7"
+      },
+      {
+        "line": "Și-apoi zici că ești român!",
+        "start_s": 149.83,
+        "line_audio": "417ccc347160ab88"
+      },
+      {
+        "line": "Biata bab-a-ntrat în laie",
+        "start_s": 153.33,
+        "line_audio": "1cb3ff960c99a658"
+      },
+      {
+        "line": "La stăpân.",
+        "start_s": 155.21,
+        "line_audio": "efc25fc122dace2d"
+      }
+    ],
+    [
+      {
+        "line": "Ca pe-o bufniț-o-nconjoară",
+        "start_s": 156.34,
+        "line_audio": "fff5cf8919dcae69"
+      },
+      {
+        "line": "Și-o petrec cu chiu cu vai,",
+        "start_s": 156.59,
+        "line_audio": "0ff77c055a2f85a1"
+      },
+      {
+        "line": "Și se țin de dânsa scai,",
+        "start_s": 160.28,
+        "line_audio": "4289eacab2224eba"
+      },
+      {
+        "line": "Plină-i strâmta ulicioară",
+        "start_s": 161.85,
+        "line_audio": "3126fb5043e72bd1"
+      },
+      {
+        "line": "De alai.",
+        "start_s": 164.49,
+        "line_audio": "4542f87a6c00da34"
+      }
+    ],
+    [
+      {
+        "line": "Nu e chip să-i faci cu buna",
+        "start_s": 164.49,
+        "line_audio": "10c73590a5c17cdc"
+      },
+      {
+        "line": "Să-și păzească drumul lor!",
+        "start_s": 167.12,
+        "line_audio": "2b5a89f732937c01"
+      },
+      {
+        "line": "Râd și sar într-un picior,",
+        "start_s": 170.02,
+        "line_audio": "d6b4099a287c9c3d"
+      },
+      {
+        "line": "Se-nvârtesc și țipă-ntruna",
+        "start_s": 172.11,
+        "line_audio": "0df1ed6a1179eb67"
+      },
+      {
+        "line": "Mai cu zor.",
+        "start_s": 174.6,
+        "line_audio": "25afb231cbd7cce0"
+      }
+    ],
+    [
+      {
+        "line": "Baba și-a uitat învățul:",
+        "start_s": 176.49,
+        "line_audio": "f8a77af01db5d3e2"
+      },
+      {
+        "line": "Bate,-njură, dă din mâini:",
+        "start_s": 178.93,
+        "line_audio": "fb499288f07f12c4"
+      },
+      {
+        "line": "- \"Dracilor, sunteți păgâni?",
+        "start_s": 179.86,
+        "line_audio": "ebf166c8bb452e32"
+      },
+      {
+        "line": "Maica mea! Să stai cu bățul",
+        "start_s": 183.24,
+        "line_audio": "bea6a7531c28d935"
+      },
+      {
+        "line": "Ca la câini!",
+        "start_s": 185.63,
+        "line_audio": "bc4b7f5f6ec828b1"
+      }
+    ],
+    [
+      {
+        "line": "Și cu bățul se-nvârtește",
+        "start_s": 187.0,
+        "line_audio": "5ec8a5cb52886238"
+      },
+      {
+        "line": "Ca să-și facă-n jur ocol;",
+        "start_s": 189.47,
+        "line_audio": "038df310a7b6a479"
+      },
+      {
+        "line": "Dar abia e locul gol,",
+        "start_s": 191.52,
+        "line_audio": "7aaafebe5ea5de84"
+      },
+      {
+        "line": "Și mulțimea năvălește",
+        "start_s": 192.89,
+        "line_audio": "0be2479f40b50b43"
+      },
+      {
+        "line": "Iarăși stol.",
+        "start_s": 194.96,
+        "line_audio": "3527eee4f5473cb5"
+      }
+    ],
+    [
+      {
+        "line": "Astfel tabăra se duce",
+        "start_s": 197.45,
+        "line_audio": "d3639bb5309ebdf5"
+      },
+      {
+        "line": "Lălăind în chip avan:",
+        "start_s": 199.13,
+        "line_audio": "2040b3999ed91d7a"
+      },
+      {
+        "line": "Baba-n mijloc, căpitan,",
+        "start_s": 200.47,
+        "line_audio": "657c747b70f4aea8"
+      },
+      {
+        "line": "Scuipă-n sân și face cruce",
+        "start_s": 202.28,
+        "line_audio": "e79672aabffedfcf"
+      },
+      {
+        "line": "De Satan.",
+        "start_s": 205.66,
+        "line_audio": "b8e3af13529b5bcc"
+      }
+    ],
+    [
+      {
+        "line": "Ba se răscolesc și câinii",
+        "start_s": 206.82,
+        "line_audio": "331d60cb1c6cdf08"
+      },
+      {
+        "line": "De prin curți, și sar la ei.",
+        "start_s": 209.02,
+        "line_audio": "068ad1428065121f"
+      },
+      {
+        "line": "Pe la garduri ies femei,",
+        "start_s": 211.43,
+        "line_audio": "341112809257672b"
+      },
+      {
+        "line": "Se urnesc mirați bătrânii",
+        "start_s": 213.36,
+        "line_audio": "6b192c969cc8532a"
+      },
+      {
+        "line": "Din bordei.",
+        "start_s": 215.84,
+        "line_audio": "995d058c8bb65a2a"
+      }
+    ],
+    [
+      {
+        "line": "- \"Ce-i pe drum atâta gură?",
+        "start_s": 215.84,
+        "line_audio": "29f24f4acf7cfef1"
+      },
+      {
+        "line": "- \"Nu-i nimic. Copii ștrengari.",
+        "start_s": 218.65,
+        "line_audio": "b3fc2bce68771c23"
+      },
+      {
+        "line": "- \"Ei, auzi! Vedea-i-aș mari,",
+        "start_s": 221.14,
+        "line_audio": "066412ce45d3d31e"
+      },
+      {
+        "line": "Parcă trece-adunătură",
+        "start_s": 224.91,
+        "line_audio": "e34f47f11cd73cf9"
+      },
+      {
+        "line": "De tătari!",
+        "start_s": 227.11,
+        "line_audio": "02c0e9041b6968f7"
+      }
+    ]
+  ],
+  "glosses": [
+    {
+      "ro": "uliță",
+      "en": "(village) lane, narrow street",
+      "note": "Slavic ulica 'street'"
+    },
+    {
+      "ro": "fulg",
+      "en": "snowflake"
+    },
+    {
+      "ro": "norii s-au răzbunat",
+      "en": "the clouds broke up / the sky cleared",
+      "note": "lit. 'the clouds avenged themselves'"
+    },
+    {
+      "ro": "grămadă",
+      "en": "in a heap, crowded together"
+    },
+    {
+      "ro": "năvalnic",
+      "en": "rushing, impetuous"
+    },
+    {
+      "ro": "vuiet",
+      "en": "roar, din"
+    },
+    {
+      "ro": "sănii",
+      "en": "sleds (sg. sanie)",
+      "note": "Bulgarian sani"
+    },
+    {
+      "ro": "coastă",
+      "en": "slope, hillside",
+      "note": "Lat. costa 'rib'"
+    },
+    {
+      "ro": "fac mătănii",
+      "en": "tumble head over heels",
+      "note": "lit. 'make prostrations' (church bows)"
+    },
+    {
+      "ro": "se gâlcevesc",
+      "en": "squabble, bicker"
+    },
+    {
+      "ro": "vrăbii gureșe",
+      "en": "chattering sparrows",
+      "note": "vrabie < Slavic vrabiĭ"
+    },
+    {
+      "ro": "se scâncesc",
+      "en": "whimper, whine"
+    },
+    {
+      "ro": "cărare",
+      "en": "path, track",
+      "note": "Lat. carraria 'cart-track'"
+    },
+    {
+      "ro": "soro",
+      "en": "'sister!' — familiar exclamation",
+      "note": "vocative of soră"
+    },
+    {
+      "ro": "sol",
+      "en": "messenger, envoy"
+    },
+    {
+      "ro": "mă-sa",
+      "en": "his mother",
+      "note": "colloquial for mama sa"
+    },
+    {
+      "ro": "încruntat",
+      "en": "frowning, scowling"
+    },
+    {
+      "ro": "s-avântă",
+      "en": "dashes, hurls himself forward",
+      "note": "a se avânta"
+    },
+    {
+      "ro": "cade-n brânci",
+      "en": "falls headlong, on all fours"
+    },
+    {
+      "ro": "ceafă",
+      "en": "nape, back of the neck",
+      "note": "cf. Albanian qafë (substrate)"
+    },
+    {
+      "ro": "miel",
+      "en": "lamb",
+      "note": "Lat. agnellus (dim. of agnus)"
+    },
+    {
+      "ro": "căciulă",
+      "en": "tall fur cap"
+    },
+    {
+      "ro": "înoată",
+      "en": "(here) wades through the snow",
+      "note": "lit. 'swims'"
+    },
+    {
+      "ro": "gloată",
+      "en": "crowd, mob, throng",
+      "note": "Slavic glota"
+    },
+    {
+      "ro": "chitește",
+      "en": "(regional) sizes up, reckons",
+      "note": "a chiti"
+    },
+    {
+      "ro": "năvălește",
+      "en": "surges, swarms",
+      "note": "a năvăli"
+    },
+    {
+      "ro": "pe-ntrecut",
+      "en": "racing one another",
+      "note": "pe întrecute"
+    },
+    {
+      "ro": "cât o zi de post",
+      "en": "enormous",
+      "note": "lit. 'as big as a fast-day'"
+    },
+    {
+      "ro": "adăpost",
+      "en": "shelter",
+      "note": "Lat. ad appositum"
+    },
+    {
+      "ro": "creștin",
+      "en": "(here) poor soul, fellow",
+      "note": "lit. 'Christian'"
+    },
+    {
+      "ro": "babă",
+      "en": "old woman",
+      "note": "Slavic baba"
+    },
+    {
+      "ro": "cojoc",
+      "en": "sheepskin coat",
+      "note": "Slavic kožuhŭ"
+    },
+    {
+      "ro": "sfori de tei",
+      "en": "strings of linden bast"
+    },
+    {
+      "ro": "s-oțărăște",
+      "en": "gets cross, snaps at",
+      "note": "a se oțărî"
+    },
+    {
+      "ro": "Barba-cot",
+      "en": "'Beard-an-inch' — nickname for the tiny boy"
+    },
+    {
+      "ro": "cu chiu cu vai",
+      "en": "with great difficulty"
+    },
+    {
+      "ro": "se țin scai",
+      "en": "stick like burrs",
+      "note": "scai = burr"
+    },
+    {
+      "ro": "și-a uitat învățul",
+      "en": "forgot her manners / good breeding"
+    },
+    {
+      "ro": "alai",
+      "en": "procession, noisy retinue",
+      "note": "Turkish alay"
+    },
+    {
+      "ro": "băț",
+      "en": "stick, staff"
+    },
+    {
+      "ro": "stol",
+      "en": "flock (of birds)"
+    },
+    {
+      "ro": "tabăra",
+      "en": "the band, troop",
+      "note": "lit. 'camp'; Slavic tabor"
+    },
+    {
+      "ro": "lălăind",
+      "en": "straggling noisily along"
+    },
+    {
+      "ro": "avan",
+      "en": "fierce, dreadful (regional)"
+    },
+    {
+      "ro": "scuipă-n sân",
+      "en": "spits in her bosom (against the evil eye)"
+    },
+    {
+      "ro": "bordei",
+      "en": "peasant hut, half-dug hovel"
+    },
+    {
+      "ro": "ștrengari",
+      "en": "rascals, scamps"
+    },
+    {
+      "ro": "adunătură",
+      "en": "rabble, motley crew"
+    }
+  ]
+}
