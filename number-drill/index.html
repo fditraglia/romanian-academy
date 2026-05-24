@@ -294,6 +294,7 @@ function renderRecognize() {
         else if (bb === b) bb.classList.add("bad");
       });
       reveal.style.display = "block";
+      if (item.audio) play(item.audio);
       document.getElementById("next").addEventListener("click", advance);
     });
   });
