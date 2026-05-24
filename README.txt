@@ -5,6 +5,7 @@ Source files live in:
   - ../verb-drill/         (index.html and data.jsonl)
   - ../number-drill/       (index.html and data.jsonl)
   - ../little-words/       (index.html and data.jsonl)
+  - ../conversation-drill/ (index.html and data.json)
   - ../poems/              (one shared index.html + a .json per poem;
                             the player loads ?poem=<slug>)
   - ../audio/              (shared audio cache; site/audio/ holds only the
