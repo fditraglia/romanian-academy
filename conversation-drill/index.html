@@ -1,286 +1,191 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<title>Romanian conversation drill</title>
+<title>Romanian conversation — greetings</title>
 <style>
-  :root {
-    --bg: #fbf7f0; --fg: #2a2a2a; --muted: #6a6a6a; --line: #d8d4cc;
-    --accent: #8c2d2d; --good: #2d8c4d; --bad: #b03030; --pill: #efe9dc;
-    --formal: #5a4a8c; --informal: #2d7d8c;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg);
-    font: 17px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
-  body { max-width: 760px; margin: 0 auto; padding: 18px 16px 64px; }
-  h1 { font-size: 1.25rem; margin: 0 0 4px; }
-  .sub { color: var(--muted); margin-bottom: 16px; }
-  .modes { display: flex; gap: 4px; margin-bottom: 14px;
-    border: 1px solid var(--line); border-radius: 10px; padding: 4px; background: #fff; }
-  .modes button { flex: 1; border: 0; background: transparent; padding: 8px 6px;
-    border-radius: 7px; font: inherit; color: var(--fg); cursor: pointer; }
-  .modes button.active { background: var(--accent); color: #fff; }
-  .filters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
-  .filters label { font-size: 0.84rem; padding: 5px 10px; border: 1px solid var(--line);
-    border-radius: 999px; background: #fff; cursor: pointer; user-select: none; }
-  .filters input { display: none; }
-  .filters label:has(input:checked) { background: var(--pill); border-color: var(--accent);
-    font-weight: 600; }
-  .reg-row label:has(input:checked) { border-color: var(--formal); }
-  .card { background: #fff; border: 1px solid var(--line); border-radius: 14px;
-    padding: 22px 18px; margin-bottom: 12px; }
-  .pose { font-size: 0.95rem; color: var(--muted); margin-bottom: 6px; }
-  .pose .cat { color: var(--accent); font-weight: 600; }
-  .reg { font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
-    letter-spacing: .04em; border-radius: 999px; padding: 1px 8px; margin-left: 6px;
-    background: var(--pill); color: var(--muted); }
-  .reg.formal { color: #fff; background: var(--formal); }
-  .reg.informal { color: #fff; background: var(--informal); }
-  .prompt { font-size: 1.55rem; font-weight: 700; margin: 8px 0 2px; }
-  .prompt-en { color: var(--muted); font-size: 1rem; }
-  .answer { font-size: 1.35rem; font-weight: 700; margin: 14px 0 4px; }
-  .answer.hidden { color: var(--muted); font-size: 1rem; font-weight: 400; }
-  .variants { margin-top: 12px; display: flex; flex-direction: column; gap: 7px; }
-  .variant { display: flex; align-items: baseline; gap: 9px; padding: 6px 0;
-    border-top: 1px dashed var(--line); }
-  .variant:first-child { border-top: 0; }
-  .variant .v-ro { font-weight: 600; }
-  .variant .v-en { color: var(--muted); font-size: 0.92rem; }
-  .variant.peripheral { opacity: 0.6; }
-  .variant.peripheral .v-ro::after { content: " · rare/formal"; color: var(--muted);
-    font-weight: 400; font-size: 0.78rem; }
-  .v-play { margin-left: auto; padding: 3px 9px; font-size: .85rem; border: 1px solid var(--line);
-    border-radius: 6px; background: #fff; cursor: pointer; }
-  .note { color: var(--muted); font-size: 0.9rem; margin-top: 10px; line-height: 1.45; }
-  .row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-  button.btn { font: inherit; padding: 9px 14px; border-radius: 8px;
-    border: 1px solid var(--line); background: #fff; cursor: pointer; }
-  button.btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
-  button.btn:disabled { opacity: 0.4; cursor: default; }
-  .input-row { margin-top: 14px; }
-  input[type=text] { font: inherit; font-size: 1.15rem; padding: 10px 12px;
-    border: 1px solid var(--line); border-radius: 8px; width: 100%; background: #fff; color: var(--fg); }
-  input[type=text].good { border-color: var(--good); }
-  input[type=text].bad { border-color: var(--bad); }
-  .score { margin-left: auto; color: var(--muted); font-size: 0.9rem; font-variant-numeric: tabular-nums; }
-  .footer { display: flex; align-items: center; margin-top: 6px; }
-  /* dialogue */
-  .dlg-head { margin-bottom: 12px; }
-  .dlg-scene { color: var(--muted); font-size: 0.95rem; margin-top: 4px; }
-  .turn { padding: 9px 0; border-top: 1px dashed var(--line); }
-  .turn:first-child { border-top: 0; }
-  .turn .sp { font-size: 0.8rem; color: var(--accent); font-weight: 700; }
-  .turn.you .sp { color: var(--informal); }
-  .turn .t-ro { font-weight: 600; }
-  .turn .t-en { color: var(--muted); font-size: 0.92rem; }
-  .turn.pending .t-ro { color: var(--muted); font-style: italic; font-weight: 400; }
-  /* browse */
-  .ref-cat { background: #fff; border: 1px solid var(--line); border-radius: 14px;
-    margin-bottom: 12px; overflow: hidden; }
-  .ref-cat h2 { margin: 0; padding: 12px 16px; font-size: 1rem;
-    background: var(--pill); border-bottom: 1px solid var(--line); }
-  .ref-move { padding: 10px 16px; border-bottom: 1px solid var(--line); }
-  .ref-move:last-child { border-bottom: 0; }
-  .ref-move .mv { font-size: 0.82rem; color: var(--muted); margin-bottom: 4px; }
-  .muted { color: var(--muted); }
-  .kbd { font-family: ui-monospace, Menlo, monospace; background: var(--pill);
-    padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
-  .helper { color: var(--muted); font-size: 0.85rem; margin-top: 10px; }
-</style>
-</head>
-<body>
+  :root{--bg:#fbf7f0;--fg:#2a2a2a;--muted:#6a6a6a;--line:#d8d4cc;--accent:#8c2d2d;
+    --good:#2d8c4d;--bad:#b03030;--pill:#efe9dc;--formal:#5a4a8c;--informal:#2d7d8c;}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--fg);
+    font:17px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+  body{max-width:640px;margin:0 auto;padding:18px 16px 64px}
+  h1{font-size:1.2rem;margin:0 0 2px}.sub{color:var(--muted);margin-bottom:14px;font-size:.95rem}
+  .steps{display:flex;gap:4px;margin-bottom:8px;border:1px solid var(--line);border-radius:10px;padding:4px;background:#fff}
+  .steps button{flex:1;border:0;background:transparent;padding:9px 6px;border-radius:7px;font:inherit;color:var(--fg);cursor:pointer}
+  .steps button.active{background:var(--accent);color:#fff}
+  .scope{display:flex;gap:8px;align-items:center;margin-bottom:14px;font-size:.85rem;color:var(--muted)}
+  .scope button{font:inherit;font-size:.8rem;padding:3px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;cursor:pointer}
+  .scope button.on{background:var(--pill);border-color:var(--accent);font-weight:600;color:var(--fg)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px 20px;margin-bottom:12px}
+  .when{font-size:1.05rem;color:var(--accent);font-weight:600}
+  .ro{font-size:1.7rem;font-weight:700;margin:6px 0}
+  .en{color:var(--muted)}
+  .reg{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;border-radius:999px;padding:1px 8px;margin-left:6px;background:var(--pill);color:var(--muted)}
+  .reg.formal{color:#fff;background:var(--formal)}.reg.informal{color:#fff;background:var(--informal)}
+  /* accordion (Learn) */
+  .acc{border:1px solid var(--line);border-radius:10px;margin-bottom:8px;background:#fff;overflow:hidden}
+  .acc-h{width:100%;display:flex;align-items:center;gap:10px;padding:14px 16px;border:0;background:transparent;font:inherit;cursor:pointer;text-align:left}
+  .acc-h .when{flex:1}
+  .acc-h .ways{font-size:.74rem;color:var(--muted);background:var(--pill);border-radius:999px;padding:1px 9px;white-space:nowrap}
+  .acc-h .chev{color:var(--muted);font-size:.8rem}
+  .acc.open .acc-h .chev{transform:rotate(90deg)}
+  .acc-b{padding:2px 16px 16px}
+  .also{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}
+  .also .lbl{font-size:.74rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+  .also .a{display:flex;align-items:baseline;gap:8px;padding:3px 0}.also .a .aro{font-weight:600;font-size:1rem}
+  /* practice slots */
+  .slots{display:flex;flex-direction:column;gap:6px;margin:14px 0 4px}
+  .slot{display:flex;align-items:center;gap:8px;padding:8px 11px;border:1px dashed var(--line);border-radius:8px;color:var(--muted)}
+  .slot.filled{border-style:solid;border-color:var(--good);color:var(--fg);font-weight:600;background:#f3faf4}
+  .slot .sro{flex:1}
+  .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;align-items:center}
+  button.btn{font:inherit;padding:10px 16px;border-radius:8px;border:1px solid var(--line);background:#fff;cursor:pointer}
+  button.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  button.btn:disabled{opacity:.4;cursor:default}
+  .play{padding:4px 11px;font-size:.9rem;border:1px solid var(--line);border-radius:6px;background:#fff;cursor:pointer}
+  input[type=text]{font:inherit;font-size:1.15rem;padding:10px 12px;border:1px solid var(--line);border-radius:8px;width:100%;background:#fff}
+  input.good{border-color:var(--good)}input.bad{border-color:var(--bad)}
+  .prog{margin-left:auto;color:var(--muted);font-size:.85rem;font-variant-numeric:tabular-nums}
+  .turn{padding:9px 0;border-top:1px dashed var(--line)}.turn:first-child{border-top:0}
+  .turn .sp{font-size:.78rem;color:var(--accent);font-weight:700}.turn.you .sp{color:var(--informal)}
+  .turn .tro{font-weight:600}.turn .ten{color:var(--muted);font-size:.92rem}
+  .turn.pending .tro{color:var(--muted);font-style:italic;font-weight:400}
+  .done{text-align:center;color:var(--good);font-weight:600;padding:10px}
+  .muted{color:var(--muted)} .hint{color:var(--muted);font-size:.85rem;margin:0 2px 12px}
+  .grp-h{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin:18px 2px 8px}
+  .proto{background:#fff3cd;border:1px solid #e6d07a;border-radius:8px;padding:6px 10px;font-size:.8rem;color:#6a5a1a;margin-bottom:12px}
+</style></head><body>
 <div style="max-width:720px;margin:0 auto 14px;display:flex;align-items:center;gap:9px;padding:8px 16px 10px;border-bottom:1px solid #d8d4cc;font:15px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;"><a href="/" style="display:flex;align-items:center;gap:9px;text-decoration:none;color:#8c2d2d;font-weight:600;"><span style="display:inline-block;width:21px;height:14px;border-radius:2px;background:linear-gradient(90deg,#002B7F 0 33.34%,#FCD116 33.34% 66.67%,#CE1126 66.67% 100%);box-shadow:0 0 0 1px rgba(0,0,0,.08);"></span>Romanian.Academy</a><a href="/" style="margin-left:auto;text-decoration:none;color:#8c2d2d;">All tools &rarr;</a></div>
 
-
-<h1>Conversation drill</h1>
-<div class="sub">Romanian by communicative move — say the right thing in context. (A1–A2 core: greetings, introductions, courtesy, good wishes, small talk.)</div>
-
-<div class="modes">
-  <button id="m-produce" class="active">Say it</button>
-  <button id="m-dialogue">Dialogue</button>
-  <button id="m-browse">Browse</button>
+<h1>Greetings · <span class="muted">Salutări</span></h1>
+<div class="sub">Lesson 1 — the essentials for hello, how-are-you, and goodbye.</div>
+<div class="steps">
+  <button id="s-learn" class="active">① Learn</button>
+  <button id="s-practice">② Practice</button>
+  <button id="s-dialogue">③ Dialogue</button>
 </div>
-
-<div id="fn-filters" class="filters"></div>
-<div id="reg-filters" class="filters reg-row"></div>
-
 <div id="view"></div>
-
 <script>
-let DATA = {functions: [], dialogues: []};
-let MOVES = [];                 // flat: {function, move, note, variants:[...]}
-let activeFns = new Set();      // empty = all
-let activeRegs = new Set();     // empty = all
-let mode = "produce";
-let state = null;
-let dlgIdx = 0;
+let L=null;
+let step="learn", queue=[], qi=0, score={r:0,t:0}, dlg={i:0,shown:false}, dlgMode="read";
+function essentials(){ return L.moves.filter(m=>m.in_core); }
+function alsoBlock(m){ return (m.also&&m.also.length)?`<div class="also"><div class="lbl">other ways to say it</div>`+
+  m.also.map(a=>`<div class="a"><span class="aro">${esc(a.ro)}</span>${regTag(a.register)}<span style="margin-left:auto">${ab(a.audio)}</span></div>`).join("")+`</div>`:""; }
+function esc(s){return (s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]))}
+function norm(s){return (s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[.,!?;:\-—()\/…"']/g," ").replace(/\s+/g," ").trim().toLowerCase()}
+function play(h){ if(!h) return; new Audio("../audio/"+h+".mp3").play().catch(()=>{}); }
+document.addEventListener("click",e=>{const b=e.target.closest("[data-play]");if(b){e.preventDefault();play(b.getAttribute("data-play"));}});
+const ab=h=>h?`<button class="play" data-play="${h}">▶</button>`:"";
+function regTag(r){return r&&r!=="neutral"?`<span class="reg ${r}">${r}</span>`:""}
+const V=()=>document.getElementById("view");
+function phrasings(m){ return [m.core, ...(m.also||[])]; }
 
-function shuffle(a){ for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
-function norm(s){ return (s||"").normalize("NFD").replace(/[̀-ͯ]/g,"")
-  .replace(/[.,?!;:\-—()\/…"']/g," ").replace(/\s+/g," ").trim().toLowerCase(); }
-function audioSrc(h){ return (window.AUDIO_MAP && window.AUDIO_MAP[h]) || `../audio/${h}.mp3`; }
-function play(h){ if(!h) return; const a=new Audio(audioSrc(h)); a.play().catch(()=>{}); }
-document.addEventListener("click", e=>{ const b=e.target.closest("[data-play]");
-  if(b){ e.preventDefault(); play(b.getAttribute("data-play")); } });
-
-function regOk(v){ return activeRegs.size===0 || activeRegs.has(v.register); }
-function moveVariants(m){ return m.variants.filter(regOk); }   // variants passing register filter
-function pool(){
-  return MOVES.filter(m => (activeFns.size===0 || activeFns.has(m.function)) && moveVariants(m).length);
-}
-
-// ---------- mode: produce ("say it") ----------
-function renderProduce(){
-  const view=document.getElementById("view");
-  const p=pool();
-  if(!p.length){ view.innerHTML=`<p class="muted">No moves match the current filters.</p>`; return; }
-  if(!state || state.mode!=="produce"){ state={mode:"produce",queue:shuffle([...p]),i:0,score:{right:0,total:0}}; }
-  const m=state.queue[state.i % state.queue.length];
-  const vs=moveVariants(m);
-  view.innerHTML=`
-    <div class="card">
-      <div class="pose"><span class="cat">${esc(m.function)}</span></div>
-      <div class="prompt">${esc(m.move)}</div>
-      <div class="prompt-en muted">say it in Romanian</div>
-      <div class="input-row"><input id="ans" type="text" autocomplete="off"
-        autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="type the Romanian…"></div>
-      <div class="answer hidden" id="reveal">…</div>
-      <div id="extra" style="display:none"></div>
-      <div class="row" id="actions">
-        <button class="btn primary" id="check">Check</button>
-        <button class="btn" id="show">Show</button>
-      </div>
-      <div class="footer"><span class="muted helper" style="margin:0">Enter = check / next · <span class="kbd">?</span> = show</span>
-        <span class="score">${state.score.right}/${state.score.total}</span></div>
-    </div>`;
-  const inp=document.getElementById("ans"), reveal=document.getElementById("reveal"),
-    extra=document.getElementById("extra"), checkBtn=document.getElementById("check"),
-    showBtn=document.getElementById("show");
-  let revealed=false;
-  function doReveal(scored){
-    revealed=true;
-    reveal.classList.remove("hidden");
-    reveal.innerHTML = `<span class="muted" style="font-size:.9rem;font-weight:400">accepted:</span>`;
-    extra.style.display="block";
-    extra.innerHTML = `<div class="variants">` + m.variants.map(v=>`
-      <div class="variant ${v.peripheral?"peripheral":""}">
-        <span class="v-ro">${esc(v.ro)}</span>
-        <span class="reg ${v.register}">${v.register}</span>
-        <span class="v-en">${esc(v.en||"")}</span>
-        ${v.audio?`<button class="v-play" data-play="${v.audio}" title="hear it">▶</button>`:""}
-      </div>`).join("") + `</div>` + (m.note?`<div class="note">${esc(m.note)}</div>`:"");
-    checkBtn.textContent="Next →"; showBtn.disabled=true;
-    if(scored!==null){ state.score.total+=1; if(scored) state.score.right+=1; }
-  }
-  function advance(){ state.i+=1; if(state.i%state.queue.length===0) state.queue=shuffle([...p]); renderProduce(); }
-  inp.focus();
-  inp.addEventListener("input",()=>inp.classList.remove("good","bad"));
-  checkBtn.addEventListener("click",()=>{
-    if(revealed){ advance(); return; }
-    const t=norm(inp.value);
-    const ok = t && vs.some(v=>norm(v.ro)===t) || (t && m.variants.some(v=>norm(v.ro)===t));
-    inp.classList.add(ok?"good":"bad");
-    doReveal(!!ok);
-  });
-  showBtn.addEventListener("click",()=>doReveal(null));
-  inp.addEventListener("keydown",e=>{
-    if(e.key==="Enter"){ e.preventDefault(); checkBtn.click(); }
-    else if(e.key==="?" && !inp.value){ e.preventDefault(); showBtn.click(); }
-  });
-}
-
-// ---------- mode: dialogue (respond to cue) ----------
-function renderDialogue(){
-  const view=document.getElementById("view");
-  const dlgs=DATA.dialogues||[];
-  if(!dlgs.length){ view.innerHTML=`<p class="muted">No dialogues yet.</p>`; return; }
-  const d=dlgs[dlgIdx % dlgs.length];
-  if(!state || state.mode!=="dialogue" || state.id!==d.id){ state={mode:"dialogue",id:d.id,upto:0}; }
-  const turnsHtml=d.turns.map((t,idx)=>{
-    const you = t.role==="respond";
-    const shown = idx<=state.upto;
-    const pending = you && idx===state.upto && !state.shownRo;
-    if(pending){
-      return `<div class="turn you pending"><span class="sp">${esc(t.speaker)}</span>
-        <div class="t-ro">your turn — <span class="muted">${esc(t.en)}</span></div></div>`;
+// ---- LEARN: one expandable list, grouped by importance ----
+function learn(){
+  const groups=[["Essentials", L.moves.filter(m=>m.in_core)],
+                ["Good to know", L.moves.filter(m=>!m.in_core)]];
+  const flat=[]; let gi=0, html=`<div class="hint">Tap any greeting to see &amp; hear it.</div>`;
+  for(const [label,ms] of groups){ if(!ms.length) continue;
+    html+=`<div class="grp-h">${label}</div>`;
+    for(const m of ms){ const idx=gi++; flat.push(m); const n=phrasings(m).length;
+      html+=`<div class="acc" id="acc-${idx}">
+        <button class="acc-h" data-acc="${idx}"><span class="when">${esc(m.when)}</span>
+          <span class="ways">${n} ${n===1?'way':'ways'}</span><span class="chev">▸</span></button>
+        <div class="acc-b" id="b-${idx}" style="display:none">
+          <div class="ro">${esc(m.core.ro)} ${ab(m.core.audio)} ${regTag(m.core.register)}</div>
+          <div class="en">${esc(m.core.en)}</div>${alsoBlock(m)}</div></div>`;
     }
-    if(!shown) return "";
-    return `<div class="turn ${you?"you":""}"><span class="sp">${esc(t.speaker)}</span>
-      <div class="t-ro">${esc(t.ro)}</div><div class="t-en">${esc(t.en)}</div>${t.audio?`<button class="v-play" data-play="${t.audio}">▶</button>`:""}</div>`;
-  }).join("");
-  const cur=d.turns[state.upto];
-  const atEnd = state.upto>=d.turns.length;
-  let btns;
-  if(atEnd) btns=`<button class="btn primary" id="next-dlg">Next dialogue →</button>`;
-  else if(cur.role==="respond" && !state.shownRo) btns=`<button class="btn primary" id="reveal-turn">Reveal my line</button>`;
-  else btns=`<button class="btn primary" id="cont">Continue →</button>`;
-  view.innerHTML=`
-    <div class="card">
-      <div class="dlg-head"><span class="pose"><span class="cat">${esc(d.title_en)}</span>
-        <span class="reg ${d.register}">${d.register}</span></span>
-        <div class="dlg-scene">${esc(d.scenario)}</div></div>
-      ${turnsHtml}
-      <div class="row">${btns}</div>
-    </div>`;
-  const nx=document.getElementById("next-dlg"); if(nx) nx.onclick=()=>{ dlgIdx+=1; state=null; renderDialogue(); };
-  const rv=document.getElementById("reveal-turn"); if(rv) rv.onclick=()=>{ state.shownRo=true; renderDialogue(); };
-  const ct=document.getElementById("cont"); if(ct) ct.onclick=()=>{ state.upto+=1; state.shownRo=false; renderDialogue(); };
-}
-
-// ---------- mode: browse ----------
-function renderBrowse(){
-  const view=document.getElementById("view");
-  const fns = DATA.functions.filter(f=>activeFns.size===0 || activeFns.has(f.function));
-  view.innerHTML = fns.map(f=>`
-    <div class="ref-cat"><h2>${esc(f.function)}</h2>
-      ${f.moves.map(m=>`<div class="ref-move"><div class="mv">${esc(m.move)}</div>
-        <div class="variants">${m.variants.filter(regOk).map(v=>`
-          <div class="variant ${v.peripheral?"peripheral":""}"><span class="v-ro">${esc(v.ro)}</span>
-            <span class="reg ${v.register}">${v.register}</span>
-            <span class="v-en">${esc(v.en||"")}</span>${v.audio?`<button class="v-play" data-play="${v.audio}">▶</button>`:""}</div>`).join("")}</div></div>`).join("")}
-    </div>`).join("") || `<p class="muted">No functions match the filters.</p>`;
-}
-
-function render(){
-  document.getElementById("reg-filters").style.display = (mode==="dialogue")?"none":"flex";
-  document.getElementById("fn-filters").style.display = (mode==="dialogue")?"none":"flex";
-  if(mode==="produce") renderProduce();
-  else if(mode==="dialogue") renderDialogue();
-  else renderBrowse();
-}
-function esc(s){ return (s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c])); }
-
-function buildFilters(){
-  const fnWrap=document.getElementById("fn-filters");
-  fnWrap.innerHTML = DATA.functions.map(f=>`<label><input type="checkbox" value="${esc(f.function)}">${esc(f.function)}</label>`).join("");
-  fnWrap.querySelectorAll("input").forEach(cb=>cb.addEventListener("change",()=>{
-    cb.checked?activeFns.add(cb.value):activeFns.delete(cb.value); state=null; render();
-  }));
-  const regWrap=document.getElementById("reg-filters");
-  regWrap.innerHTML = ["formal","neutral","informal"].map(r=>`<label><input type="checkbox" value="${r}">${r}</label>`).join("");
-  regWrap.querySelectorAll("input").forEach(cb=>cb.addEventListener("change",()=>{
-    cb.checked?activeRegs.add(cb.value):activeRegs.delete(cb.value); state=null; render();
+  }
+  V().innerHTML=html;
+  V().querySelectorAll("[data-acc]").forEach(h=>h.addEventListener("click",()=>{
+    const idx=+h.getAttribute("data-acc"), acc=document.getElementById("acc-"+idx), b=document.getElementById("b-"+idx);
+    const open=b.style.display!=="none";
+    b.style.display=open?"none":"block"; acc.classList.toggle("open",!open);
+    if(!open && flat[idx].core.audio) play(flat[idx].core.audio);
   }));
 }
 
-document.getElementById("m-produce").onclick=()=>setMode("produce");
-document.getElementById("m-dialogue").onclick=()=>setMode("dialogue");
-document.getElementById("m-browse").onclick=()=>setMode("browse");
-function setMode(m){ mode=m; state=null;
-  document.querySelectorAll(".modes button").forEach(b=>b.classList.remove("active"));
-  document.getElementById("m-"+m).classList.add("active"); render();
+// ---- PRACTICE: "how many ways can you say it?" (core + alternatives) ----
+function practice(){
+  const p=essentials();
+  if(!queue.length){ queue=[...p].sort(()=>Math.random()-.5); qi=0; }
+  const m=queue[qi%queue.length], ways=phrasings(m), got=new Set();
+  V().innerHTML = `<div class="card"><div class="when">${esc(m.when)}</div>
+    <div class="hint" style="margin:6px 0 0">How many ways can you say it? (${ways.length})</div>
+    <div style="margin-top:12px"><input id="ans" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="type a way to say it…"></div>
+    <div class="slots" id="slots">${ways.map((w,j)=>`<div class="slot" id="slot-${j}"><span class="sro">·····</span></div>`).join("")}</div>
+    <div class="row"><button class="btn primary" id="ck">Check</button>
+      <button class="btn" id="sh">Show all</button>
+      <button class="btn" id="nx" disabled>Next →</button>
+      <span class="prog">${score.r}/${score.t} cards</span></div></div>`;
+  const inp=document.getElementById("ans"), nx=document.getElementById("nx"); inp.focus();
+  let filled=0, scored=false;
+  function fill(w){ const s=document.getElementById("slot-"+filled); s.classList.add("filled");
+    s.innerHTML=`<span class="sro">${esc(w.ro)}</span>${regTag(w.register)} ${ab(w.audio)}`; filled++; }
+  function maybeScore(){ if(!scored){ scored=true; score.t++; if(got.size) score.r++; document.querySelector(".prog").textContent=`${score.r}/${score.t} cards`; } }
+  function finish(){ nx.disabled=false; maybeScore(); }
+  document.getElementById("ck").onclick=()=>{
+    const t=norm(inp.value); if(!t) return;
+    const w=ways.find(x=>norm(x.ro)===t && !got.has(norm(x.ro)));
+    if(w){ got.add(norm(w.ro)); fill(w); if(w.audio) play(w.audio); inp.classList.remove("bad"); inp.value="";
+           if(got.size===ways.length) finish(); }
+    else { inp.classList.add("bad"); }
+  };
+  document.getElementById("sh").onclick=()=>{ ways.forEach(w=>{ if(!got.has(norm(w.ro))){ got.add(norm(w.ro)); fill(w); } }); finish(); };
+  nx.onclick=()=>{ qi++; if(qi%queue.length===0) queue=[...p].sort(()=>Math.random()-.5); practice(); };
+  inp.addEventListener("keydown",e=>{ if(e.key==="Enter"){ e.preventDefault(); if(!nx.disabled && !norm(inp.value)) nx.click(); else document.getElementById("ck").click(); } });
 }
 
-fetch("data.json").then(r=>r.json()).then(d=>{
-  DATA=d;
-  MOVES = d.functions.flatMap(f=>f.moves.map(m=>({function:f.function, move:m.move, note:m.note, variants:m.variants})));
-  buildFilters(); render();
-}).catch(e=>{ document.getElementById("view").innerHTML=
-  `<p class="muted">Could not load data.json (serve over http, not file://). ${esc(String(e))}</p>`; });
-</script>
-</body>
-</html>
+// ---- DIALOGUE: read full script (read-along) OR hide & practice (step-through) ----
+function turnHtml(t){ const you=t.role==="respond";
+  return `<div class="turn ${you?"you":""}"><span class="sp">${esc(t.speaker)}</span><div class="tro">${esc(t.ro)} ${ab(t.audio)}</div><div class="ten">${esc(t.en)}</div></div>`; }
+function dialogue(){ const d=L.dialogue;
+  const toggle=`<div class="scope" style="margin:8px 0 10px">script:
+    <button id="d-full" class="${dlgMode==='read'?'on':''}">full</button>
+    <button id="d-prac" class="${dlgMode==='practice'?'on':''}">hide &amp; practice</button></div>`;
+  let body="", footer="";
+  if(dlgMode==="read"){
+    body=d.turns.map(turnHtml).join("");
+  } else {
+    body=d.turns.map((t,idx)=>{ const you=t.role==="respond", shown=idx<=dlg.i;
+      if(you&&idx===dlg.i&&!dlg.shown) return `<div class="turn you pending"><span class="sp">${esc(t.speaker)}</span><div class="tro">your turn — <span class="muted">${esc(t.en)}</span></div></div>`;
+      return shown?turnHtml(t):"";
+    }).join("");
+    const cur=d.turns[dlg.i], end=dlg.i>=d.turns.length; let b;
+    if(end) b=`<button class="btn" id="again">↻ Restart</button>`;
+    else if(cur.role==="respond"&&!dlg.shown) b=`<button class="btn primary" id="rv">Reveal my line</button>`;
+    else b=`<button class="btn primary" id="co">Continue →</button>`;
+    footer=`${end?'<div class="done">✓ end of dialogue</div>':""}<div class="row">${b}</div>`;
+  }
+  V().innerHTML=`<div class="card"><div class="when">${esc(d.title_en)}</div>
+    <div class="hint" style="margin-top:4px">${esc(d.scenario)}</div>${toggle}
+    <div class="row" style="margin:0 0 10px"><button class="btn" id="listen">▶ Listen to the whole thing</button></div>
+    ${body}${footer}</div>`;
+  document.getElementById("d-full").onclick=()=>{dlgMode="read";dialogue();};
+  document.getElementById("d-prac").onclick=()=>{dlgMode="practice";dlg={i:0,shown:false};dialogue();};
+  document.getElementById("listen").onclick=()=>playAll(0);
+  const rv=document.getElementById("rv"); if(rv)rv.onclick=()=>{dlg.shown=true;dialogue();};
+  const co=document.getElementById("co"); if(co)co.onclick=()=>{dlg.i++;dlg.shown=false;dialogue();};
+  const ag=document.getElementById("again"); if(ag)ag.onclick=()=>{dlg.i=0;dlg.shown=false;dialogue();};
+}
+function playAll(k){ const ts=L.dialogue.turns; if(k>=ts.length||!ts[k].audio) return;
+  const a=new Audio("../audio/"+ts[k].audio+".mp3");
+  a.onended=()=>setTimeout(()=>playAll(k+1), 850);   // ~0.85s gap between speakers
+  a.play().catch(()=>{}); }
+
+function setStep(s){ step=s; if(s==="practice")queue=[]; if(s==="dialogue"){dlg={i:0,shown:false};dlgMode="read";}
+  document.querySelectorAll(".steps button").forEach(b=>b.classList.remove("active"));
+  document.getElementById("s-"+s).classList.add("active"); render(); }
+function render(){ step==="learn"?learn():step==="practice"?practice():dialogue(); }
+function boot(){
+  document.getElementById("s-learn").onclick=()=>setStep("learn");
+  document.getElementById("s-practice").onclick=()=>setStep("practice");
+  document.getElementById("s-dialogue").onclick=()=>setStep("dialogue");
+  render();
+}
+fetch("data.json").then(r=>r.json()).then(d=>{ L=d; boot(); })
+  .catch(e=>{ document.getElementById("view").innerHTML="<p class='muted'>Couldn't load lesson data (serve over http, not file://).</p>"; });
+</script></body></html>
