@@ -190,5 +190,77 @@
    <itunes:duration>109</itunes:duration>
    <itunes:episode>131</itunes:episode>
   </item>
+  <item>
+   <title>Unit 14, Dialogue 1 — Despărțire</title>
+   <guid isPermaLink="false">u14-d1.mp3</guid>
+   <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u14-d1.mp3" length="1248550" type="audio/mpeg"/>
+   <itunes:duration>107</itunes:duration>
+   <itunes:episode>141</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 14, Dialogue 2 — Maramureș și Moldova</title>
+   <guid isPermaLink="false">u14-d2.mp3</guid>
+   <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u14-d2.mp3" length="1604538" type="audio/mpeg"/>
+   <itunes:duration>133</itunes:duration>
+   <itunes:episode>142</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 15, Dialogue 1 — Așteptare</title>
+   <guid isPermaLink="false">u15-d1.mp3</guid>
+   <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u15-d1.mp3" length="960860" type="audio/mpeg"/>
+   <itunes:duration>92</itunes:duration>
+   <itunes:episode>151</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 15, Dialogue 2 — La piață</title>
+   <guid isPermaLink="false">u15-d2.mp3</guid>
+   <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u15-d2.mp3" length="983460" type="audio/mpeg"/>
+   <itunes:duration>95</itunes:duration>
+   <itunes:episode>152</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 16, Dialogue 3 — Planuri de viitor</title>
+   <guid isPermaLink="false">u16-d3.mp3</guid>
+   <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u16-d3.mp3" length="1204117" type="audio/mpeg"/>
+   <itunes:duration>104</itunes:duration>
+   <itunes:episode>163</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 17, Dialogue 1 — Despre colegi</title>
+   <guid isPermaLink="false">u17-d1.mp3</guid>
+   <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u17-d1.mp3" length="1308677" type="audio/mpeg"/>
+   <itunes:duration>111</itunes:duration>
+   <itunes:episode>171</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 17, Dialogue 3 — Copilăria bunicului</title>
+   <guid isPermaLink="false">u17-d3.mp3</guid>
+   <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u17-d3.mp3" length="1956663" type="audio/mpeg"/>
+   <itunes:duration>158</itunes:duration>
+   <itunes:episode>173</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 18, Dialogue 2 — Planul casei</title>
+   <guid isPermaLink="false">u18-d2.mp3</guid>
+   <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u18-d2.mp3" length="1272872" type="audio/mpeg"/>
+   <itunes:duration>113</itunes:duration>
+   <itunes:episode>182</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 18, Dialogue 3 — O excursie la munte</title>
+   <guid isPermaLink="false">u18-d3.mp3</guid>
+   <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u18-d3.mp3" length="1235947" type="audio/mpeg"/>
+   <itunes:duration>95</itunes:duration>
+   <itunes:episode>183</itunes:episode>
+  </item>
  </channel>
 </rss>
