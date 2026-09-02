@@ -5,6 +5,12 @@
   <description>The dialogues of Colloquial Romanian (4th ed.), re-voiced at natural pace. Personal study copies.</description>
   <language>ro</language>
   <link>https://romanian.academy/</link>
+  <itunes:image href="https://romanian.academy/p/RMlUDYavBCK8LzJW/podcast-cover-dialogues.png"/>
+  <image>
+   <url>https://romanian.academy/p/RMlUDYavBCK8LzJW/podcast-cover-dialogues.png</url>
+   <title>Colloquial Romanian — Dialogues</title>
+   <link>https://romanian.academy/</link>
+  </image>
   <itunes:block>Yes</itunes:block>
   <item>
    <title>Unit 1, Dialogue 1 — La hotel</title>

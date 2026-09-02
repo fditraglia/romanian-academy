@@ -5,6 +5,12 @@
   <description>The book's own dialogue recordings (dialogues only, no exercises). Personal study copies of the freely distributed course audio.</description>
   <language>ro</language>
   <link>https://romanian.academy/</link>
+  <itunes:image href="https://romanian.academy/p/RMlUDYavBCK8LzJW/podcast-cover-original.png"/>
+  <image>
+   <url>https://romanian.academy/p/RMlUDYavBCK8LzJW/podcast-cover-original.png</url>
+   <title>Colloquial Romanian — Original recordings</title>
+   <link>https://romanian.academy/</link>
+  </image>
   <itunes:block>Yes</itunes:block>
   <item>
    <title>Unit 1, Dialogue 1 — La hotel</title>

@@ -5,6 +5,12 @@
   <description>The same dialogues at a slowed, learner-friendly pace. Personal study copies.</description>
   <language>ro</language>
   <link>https://romanian.academy/</link>
+  <itunes:image href="https://romanian.academy/p/RMlUDYavBCK8LzJW/podcast-cover-study.png"/>
+  <image>
+   <url>https://romanian.academy/p/RMlUDYavBCK8LzJW/podcast-cover-study.png</url>
+   <title>Colloquial Romanian — Study pace</title>
+   <link>https://romanian.academy/</link>
+  </image>
   <itunes:block>Yes</itunes:block>
   <item>
    <title>Unit 1, Dialogue 1 — La hotel</title>
