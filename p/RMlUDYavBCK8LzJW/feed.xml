@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+ <channel>
+  <title>Colloquial Romanian — Dialogues</title>
+  <description>The dialogues of Colloquial Romanian (4th ed.), re-voiced at natural pace. Personal study copies.</description>
+  <language>ro</language>
+  <link>https://romanian.academy/</link>
+  <itunes:block>Yes</itunes:block>
+  <item>
+   <title>Unit 1, Dialogue 1 — La hotel</title>
+   <guid isPermaLink="false">u01-d1.mp3</guid>
+   <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u01-d1.mp3" length="467767" type="audio/mpeg"/>
+   <itunes:duration>47</itunes:duration>
+   <itunes:episode>11</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 1, Dialogue 2 — În lift</title>
+   <guid isPermaLink="false">u01-d2.mp3</guid>
+   <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u01-d2.mp3" length="267081" type="audio/mpeg"/>
+   <itunes:duration>27</itunes:duration>
+   <itunes:episode>12</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 2, Dialogue 1 — Bun venit în România</title>
+   <guid isPermaLink="false">u02-d1.mp3</guid>
+   <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u02-d1.mp3" length="227381" type="audio/mpeg"/>
+   <itunes:duration>23</itunes:duration>
+   <itunes:episode>21</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 2, Dialogue 2 — La aeroport</title>
+   <guid isPermaLink="false">u02-d2.mp3</guid>
+   <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u02-d2.mp3" length="277637" type="audio/mpeg"/>
+   <itunes:duration>25</itunes:duration>
+   <itunes:episode>22</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 2, Dialogue 3 — La informații</title>
+   <guid isPermaLink="false">u02-d3.mp3</guid>
+   <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u02-d3.mp3" length="328405" type="audio/mpeg"/>
+   <itunes:duration>34</itunes:duration>
+   <itunes:episode>23</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 2, Dialogue 4 — Taxiurile</title>
+   <guid isPermaLink="false">u02-d4.mp3</guid>
+   <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u02-d4.mp3" length="600676" type="audio/mpeg"/>
+   <itunes:duration>62</itunes:duration>
+   <itunes:episode>24</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 3, Dialogue 1 — Pe stradă</title>
+   <guid isPermaLink="false">u03-d1.mp3</guid>
+   <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u03-d1.mp3" length="366467" type="audio/mpeg"/>
+   <itunes:duration>38</itunes:duration>
+   <itunes:episode>31</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 3, Dialogue 2 — Biroul de informații pentru turiști</title>
+   <guid isPermaLink="false">u03-d2.mp3</guid>
+   <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u03-d2.mp3" length="331526" type="audio/mpeg"/>
+   <itunes:duration>30</itunes:duration>
+   <itunes:episode>32</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 4, Dialogue 2 — Planuri de călătorie</title>
+   <guid isPermaLink="false">u04-d2.mp3</guid>
+   <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u04-d2.mp3" length="381926" type="audio/mpeg"/>
+   <itunes:duration>32</itunes:duration>
+   <itunes:episode>42</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 5, Dialogue 1 — La restaurant</title>
+   <guid isPermaLink="false">u05-d1.mp3</guid>
+   <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u05-d1.mp3" length="873951" type="audio/mpeg"/>
+   <itunes:duration>85</itunes:duration>
+   <itunes:episode>51</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 5, Dialogue 2 — La cafenea</title>
+   <guid isPermaLink="false">u05-d2.mp3</guid>
+   <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u05-d2.mp3" length="353368" type="audio/mpeg"/>
+   <itunes:duration>36</itunes:duration>
+   <itunes:episode>52</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 5, Dialogue 3 — Agenția de voiaj</title>
+   <guid isPermaLink="false">u05-d3.mp3</guid>
+   <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u05-d3.mp3" length="1183191" type="audio/mpeg"/>
+   <itunes:duration>101</itunes:duration>
+   <itunes:episode>53</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 6, Dialogue 1 — Să aranjăm o întâlnire</title>
+   <guid isPermaLink="false">u06-d1.mp3</guid>
+   <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u06-d1.mp3" length="942301" type="audio/mpeg"/>
+   <itunes:duration>84</itunes:duration>
+   <itunes:episode>61</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 7, Dialogue 1 — La poștă</title>
+   <guid isPermaLink="false">u07-d1.mp3</guid>
+   <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u07-d1.mp3" length="715395" type="audio/mpeg"/>
+   <itunes:duration>66</itunes:duration>
+   <itunes:episode>71</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 7, Dialogue 2 — La biroul de schimb</title>
+   <guid isPermaLink="false">u07-d2.mp3</guid>
+   <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u07-d2.mp3" length="481912" type="audio/mpeg"/>
+   <itunes:duration>42</itunes:duration>
+   <itunes:episode>72</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 9, Dialogue 1 — O lecție de geografie</title>
+   <guid isPermaLink="false">u09-d1.mp3</guid>
+   <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u09-d1.mp3" length="592449" type="audio/mpeg"/>
+   <itunes:duration>50</itunes:duration>
+   <itunes:episode>91</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 9, Dialogue 2 — La reprezentanța de mașini</title>
+   <guid isPermaLink="false">u09-d2.mp3</guid>
+   <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u09-d2.mp3" length="711284" type="audio/mpeg"/>
+   <itunes:duration>60</itunes:duration>
+   <itunes:episode>92</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 9, Dialogue 3 — O fotografie cu familia</title>
+   <guid isPermaLink="false">u09-d3.mp3</guid>
+   <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u09-d3.mp3" length="618734" type="audio/mpeg"/>
+   <itunes:duration>56</itunes:duration>
+   <itunes:episode>93</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 11, Dialogue 1 — La Roma</title>
+   <guid isPermaLink="false">u11-d1.mp3</guid>
+   <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u11-d1.mp3" length="845124" type="audio/mpeg"/>
+   <itunes:duration>79</itunes:duration>
+   <itunes:episode>111</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 11, Dialogue 3 — La club</title>
+   <guid isPermaLink="false">u11-d3.mp3</guid>
+   <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u11-d3.mp3" length="784220" type="audio/mpeg"/>
+   <itunes:duration>72</itunes:duration>
+   <itunes:episode>113</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 12, Dialogue 1 — La serviciu</title>
+   <guid isPermaLink="false">u12-d1.mp3</guid>
+   <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u12-d1.mp3" length="954819" type="audio/mpeg"/>
+   <itunes:duration>86</itunes:duration>
+   <itunes:episode>121</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 12, Dialogue 2 — La povești</title>
+   <guid isPermaLink="false">u12-d2.mp3</guid>
+   <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u12-d2.mp3" length="1085315" type="audio/mpeg"/>
+   <itunes:duration>98</itunes:duration>
+   <itunes:episode>122</itunes:episode>
+  </item>
+  <item>
+   <title>Unit 13, Dialogue 1 — La doctor</title>
+   <guid isPermaLink="false">u13-d1.mp3</guid>
+   <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+   <enclosure url="https://romanian.academy/p/RMlUDYavBCK8LzJW/u13-d1.mp3" length="1239292" type="audio/mpeg"/>
+   <itunes:duration>109</itunes:duration>
+   <itunes:episode>131</itunes:episode>
+  </item>
+ </channel>
+</rss>
