@@ -1,95 +1,95 @@
 {
   "title": "Somnoroase păsărele",
   "author": "Mihai Eminescu",
-  "audio_hash": "13a606db715c273f",
-  "duration_s": 29.52,
+  "audio_hash": "bee29ed5e0983e6c",
+  "duration_s": 26.32,
   "stanzas": [
     [
       {
         "line": "Somnoroase păsărele",
-        "start_s": 0.12,
-        "line_audio": "2983c50d93bfedfc"
+        "start_s": 0.1,
+        "line_audio": "b6eeffa6c718a0a6"
       },
       {
         "line": "Pe la cuiburi se adună,",
-        "start_s": 1.42,
-        "line_audio": "1dbe0049416385c2"
+        "start_s": 1.72,
+        "line_audio": "77ddae6f95272d0d"
       },
       {
         "line": "Se ascund în rămurele -",
-        "start_s": 3.83,
-        "line_audio": "2b5dabb891630762"
+        "start_s": 3.46,
+        "line_audio": "72576cebb47043d4"
       },
       {
         "line": "Noapte bună!",
-        "start_s": 5.41,
-        "line_audio": "44ff252e89fe2d0f"
+        "start_s": 5.22,
+        "line_audio": "0cc8518d192fa299"
       }
     ],
     [
       {
         "line": "Doar izvoarele suspină,",
-        "start_s": 6.38,
-        "line_audio": "5918f236097f2a0e"
+        "start_s": 6.34,
+        "line_audio": "6d5be218d1ff363a"
       },
       {
         "line": "Pe când codrul negru tace;",
-        "start_s": 8.29,
-        "line_audio": "be2387acb03b2f69"
+        "start_s": 8.039,
+        "line_audio": "916a6676293597e2"
       },
       {
         "line": "Dorm și florile-n grădină -",
-        "start_s": 10.62,
-        "line_audio": "0d47015de3eed9ad"
+        "start_s": 10.18,
+        "line_audio": "77dcb1e52c3a466c"
       },
       {
         "line": "Dormi în pace!",
-        "start_s": 12.95,
-        "line_audio": "658a89375026d26b"
+        "start_s": 12.22,
+        "line_audio": "a0b3bab18cec1c21"
       }
     ],
     [
       {
         "line": "Trece lebăda pe ape",
-        "start_s": 14.22,
-        "line_audio": "d5f338a4a8cad261"
+        "start_s": 13.38,
+        "line_audio": "c305bfbf23e9bff2"
       },
       {
         "line": "Între trestii să se culce -",
-        "start_s": 16.04,
-        "line_audio": "0ef3e0369722deea"
+        "start_s": 15.02,
+        "line_audio": "1e158eb4d06fd412"
       },
       {
         "line": "Fie-ți îngerii aproape,",
-        "start_s": 18.6,
-        "line_audio": "665d6d4378d26103"
+        "start_s": 16.92,
+        "line_audio": "f7a92df44dd46fba"
       },
       {
         "line": "Somnul dulce!",
-        "start_s": 20.53,
-        "line_audio": "14f9d99c894b0bbd"
+        "start_s": 18.78,
+        "line_audio": "9161eaa3386dd10d"
       }
     ],
     [
       {
         "line": "Peste-a nopții feerie",
-        "start_s": 21.08,
-        "line_audio": "f4c4c0aee7ed9cb6"
+        "start_s": 20.02,
+        "line_audio": "8ef5d1eca8440b05"
       },
       {
         "line": "Se ridică mândra lună,",
-        "start_s": 23.82,
-        "line_audio": "902e124e8360ec17"
+        "start_s": 21.64,
+        "line_audio": "bec0e5c17da9a37c"
       },
       {
         "line": "Totu-i vis și armonie -",
-        "start_s": 25.44,
-        "line_audio": "533c5a21b7c88743"
+        "start_s": 23.38,
+        "line_audio": "7b5d5fcc594d5543"
       },
       {
         "line": "Noapte bună!",
-        "start_s": 28.15,
-        "line_audio": "44ff252e89fe2d0f"
+        "start_s": 25.44,
+        "line_audio": "0cc8518d192fa299"
       }
     ]
   ],

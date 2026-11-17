@@ -9,23 +9,23 @@
     "ro": "Salut!",
     "en": "Hi!",
     "register": "informal",
-    "audio": "790e8c2d1b880547"
+    "audio": "1b92584c063dc3b5"
    },
    "also": [
     {
      "ro": "Bună!",
      "register": "informal",
-     "audio": "1d07f2a3761a3897"
+     "audio": "7cc7db1ba453e3c7"
     },
     {
      "ro": "Ciao!",
      "register": "informal",
-     "audio": "7a5a9b2614af3e2f"
+     "audio": "a92eabfb2706e399"
     },
     {
      "ro": "Noroc!",
      "register": "informal",
-     "audio": "cf524817feea0c73"
+     "audio": "f74aa4aefd7d6955"
     }
    ]
   },
@@ -36,23 +36,23 @@
     "ro": "Bună ziua!",
     "en": "Good afternoon / Good day!",
     "register": "neutral",
-    "audio": "fa2e738979ca144b"
+    "audio": "c3c4e49cb7bc7731"
    },
    "also": [
     {
      "ro": "Bună dimineața!",
      "register": "neutral",
-     "audio": "7846fa175c1a1bd9"
+     "audio": "62c94f545867ce80"
     },
     {
      "ro": "'Neața!",
      "register": "informal",
-     "audio": "1cb99bb54333a4b4"
+     "audio": "eabf9d9fc338b453"
     },
     {
      "ro": "Bună seara!",
      "register": "neutral",
-     "audio": "338e3c803c14ab75"
+     "audio": "c34963a4069ade96"
     }
    ]
   },
@@ -63,23 +63,23 @@
     "ro": "Să trăiți!",
     "en": "Greetings! (lit. may you live)",
     "register": "formal",
-    "audio": "243300720a37d123"
+    "audio": "98d0f3fb383106d7"
    },
    "also": [
     {
      "ro": "Salutări!",
      "register": "formal",
-     "audio": "0ce872dfd78d0655"
+     "audio": "63cf3e086c2ebd2a"
     },
     {
      "ro": "Sărut mâna!",
      "register": "formal",
-     "audio": "41d12743271ae20f"
+     "audio": "dd9eaa6033a530a6"
     },
     {
      "ro": "Respectele mele!",
      "register": "formal",
-     "audio": "ecec0965c2a2c4e2"
+     "audio": "1979679d055e475f"
     }
    ]
   },
@@ -90,18 +90,18 @@
     "ro": "Ce mai faci?",
     "en": "How are you?",
     "register": "informal",
-    "audio": "2740285b9d0f151e"
+    "audio": "2949542bb7707b29"
    },
    "also": [
     {
      "ro": "Ce faci?",
      "register": "informal",
-     "audio": "59ad4d089cace1cb"
+     "audio": "f889322b0e4c28d6"
     },
     {
      "ro": "Ce mai faceți?",
      "register": "formal",
-     "audio": "6d70c0e1a1ea5be3"
+     "audio": "17abea489dedf5a4"
     }
    ]
   },
@@ -112,18 +112,18 @@
     "ro": "Bun venit!",
     "en": "Welcome!",
     "register": "neutral",
-    "audio": "762955c6d5a5cecc"
+    "audio": "134c35837222b203"
    },
    "also": [
     {
      "ro": "Bine ați venit!",
      "register": "neutral",
-     "audio": "9512fdfd25f219b3"
+     "audio": "2d63ace5b6acbfa1"
     },
     {
      "ro": "Bine ai venit!",
      "register": "informal",
-     "audio": "b2277dedc396c3cc"
+     "audio": "7bc418bda779e76f"
     }
    ]
   },
@@ -134,13 +134,13 @@
     "ro": "Bine v-am găsit!",
     "en": "Good to find you well!",
     "register": "neutral",
-    "audio": "1de38bf35df948b9"
+    "audio": "b2eada8493b28e67"
    },
    "also": [
     {
      "ro": "Bine te-am găsit!",
      "register": "informal",
-     "audio": "17c7afad816f03f6"
+     "audio": "8fec3ac855fb172e"
     }
    ]
   },
@@ -151,23 +151,23 @@
     "ro": "Simțiți-vă ca acasă!",
     "en": "Make yourselves at home!",
     "register": "neutral",
-    "audio": "f9865e3e0af1701b"
+    "audio": "d274d841fc9e69d0"
    },
    "also": [
     {
      "ro": "Intră, te rog!",
      "register": "informal",
-     "audio": "88d5dfbf3a1ddef3"
+     "audio": "7c19f29feaf9ddb3"
     },
     {
      "ro": "Faceți-vă comozi!",
      "register": "neutral",
-     "audio": "95ef6f732af54cb9"
+     "audio": "3884a28393202fe9"
     },
     {
      "ro": "Luați loc.",
      "register": "formal",
-     "audio": "83f3b0c5f06c2cd4"
+     "audio": "db85084f3e415c14"
     }
    ]
   },
@@ -178,23 +178,23 @@
     "ro": "La revedere!",
     "en": "Goodbye!",
     "register": "neutral",
-    "audio": "cfa2a7063ae66060"
+    "audio": "277d9fce556c2c3d"
    },
    "also": [
     {
      "ro": "Pa!",
      "register": "informal",
-     "audio": "267d01d7740a854d"
+     "audio": "d97956ce21abc2d4"
     },
     {
      "ro": "Te pup!",
      "register": "informal",
-     "audio": "89f4fe47897f8fcd"
+     "audio": "449518f4a4e38b9b"
     },
     {
      "ro": "Du-te sănătos!",
      "register": "informal",
-     "audio": "d833e3ee51f88cd9"
+     "audio": "2a36d964616a5903"
     }
    ]
   },
@@ -205,38 +205,38 @@
     "ro": "Pe curând!",
     "en": "See you soon!",
     "register": "informal",
-    "audio": "a5eb416e64c18952"
+    "audio": "edd609ab2a872607"
    },
    "also": [
     {
      "ro": "Pe mai târziu!",
      "register": "informal",
-     "audio": "bf12384abbc911eb"
+     "audio": "74065fa5e565afa9"
     },
     {
      "ro": "Pe mâine!",
      "register": "informal",
-     "audio": "749f3fb455098d7c"
+     "audio": "a4ed4f517bf19682"
     },
     {
      "ro": "Pe diseară!",
      "register": "informal",
-     "audio": "1f624a9a700bd3ab"
+     "audio": "3df6ee0c9eecc6e7"
     },
     {
      "ro": "Ne mai vedem!",
      "register": "informal",
-     "audio": "94d12c7f49ddb407"
+     "audio": "a4d73190030fab77"
     },
     {
      "ro": "Mai vorbim!",
      "register": "informal",
-     "audio": "9bb0b108f6a29cea"
+     "audio": "34f8baf7f53dfecc"
     },
     {
      "ro": "Ne auzim!",
      "register": "informal",
-     "audio": "f017019a0a4257a8"
+     "audio": "de4d4a7daee91ffd"
     }
    ]
   },
@@ -247,7 +247,7 @@
     "ro": "Noapte bună!",
     "en": "Good night!",
     "register": "neutral",
-    "audio": "44ff252e89fe2d0f"
+    "audio": "0cc8518d192fa299"
    },
    "also": []
   },
@@ -258,28 +258,28 @@
     "ro": "Numai bine!",
     "en": "All the best!",
     "register": "neutral",
-    "audio": "e0b8b695081bf536"
+    "audio": "2c01fdd4f751d60f"
    },
    "also": [
     {
      "ro": "O zi bună!",
      "register": "neutral",
-     "audio": "4275f71cabf540ea"
+     "audio": "d305e9372ada79e2"
     },
     {
      "ro": "O zi plăcută!",
      "register": "neutral",
-     "audio": "51b03c714c480e11"
+     "audio": "c3cca953e6ebc8ed"
     },
     {
      "ro": "O zi frumoasă!",
      "register": "neutral",
-     "audio": "2e1405cdbe977a38"
+     "audio": "767201553233f204"
     },
     {
      "ro": "Toate cele bune!",
      "register": "formal",
-     "audio": "b750e7a307742d39"
+     "audio": "b00667d196ad8919"
     }
    ]
   }
@@ -303,7 +303,7 @@
     "ro": "Bună ziua, doamnă Ionescu! Mă bucur să vă cunosc.",
     "en": "Hello, Mrs Ionescu! I'm glad to meet you.",
     "voice": "Claudiu",
-    "audio": "43832c31f687e357"
+    "audio": "2a94f32ede7b0446"
    },
    {
     "speaker": "Doamna Ionescu",
@@ -311,7 +311,7 @@
     "ro": "Bună ziua, Tom! Bine ai venit! Poftește înăuntru.",
     "en": "Hello, Tom! Welcome! Come in.",
     "voice": "Corina",
-    "audio": "86ceae460155e2dd"
+    "audio": "98622405eeee0cbf"
    },
    {
     "speaker": "Tu",
@@ -319,7 +319,7 @@
     "ro": "Mulțumesc frumos. Aveți o casă foarte frumoasă.",
     "en": "Thank you very much. You have a very nice home.",
     "voice": "Claudiu",
-    "audio": "532cc26308861717"
+    "audio": "0e8c08723d9ab7a3"
    },
    {
     "speaker": "Doamna Ionescu",
@@ -327,7 +327,7 @@
     "ro": "Mulțumim! Vrei o cafea sau un ceai?",
     "en": "Thank you! Would you like a coffee or a tea?",
     "voice": "Corina",
-    "audio": "1faac4e8631a294b"
+    "audio": "c20778ac06e8938f"
    },
    {
     "speaker": "Tu",
@@ -335,7 +335,7 @@
     "ro": "O cafea, vă rog.",
     "en": "A coffee, please.",
     "voice": "Claudiu",
-    "audio": "901aa0c42844c2d9"
+    "audio": "136793603dfb6ff4"
    },
    {
     "speaker": "Doamna Ionescu",
@@ -343,7 +343,7 @@
     "ro": "Cu plăcere. Ia loc!",
     "en": "With pleasure. Have a seat!",
     "voice": "Corina",
-    "audio": "9aa35cd376e1931b"
+    "audio": "7ce8b3180204a09c"
    }
   ]
  }

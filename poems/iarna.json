@@ -1,628 +1,628 @@
 {
   "title": "Iarna pe uliță",
   "author": "George Coșbuc",
-  "audio_hash": "05554abc36dfd85d",
-  "duration_s": 228.32,
+  "audio_hash": "62448e9af3fc68d2",
+  "duration_s": 186.24,
   "stanzas": [
     [
       {
         "line": "A-nceput de ieri să cadă",
-        "start_s": 0.06,
-        "line_audio": "6d136985baf66394"
+        "start_s": 0.08,
+        "line_audio": "2cfe16307c2dfe7e"
       },
       {
         "line": "Câte-un fulg, acum a stat,",
-        "start_s": 1.48,
-        "line_audio": "bd5d1cc04aa7cccd"
+        "start_s": 1.64,
+        "line_audio": "1a332c02d805d2a7"
       },
       {
         "line": "Norii s-au mai răzbunat",
-        "start_s": 3.35,
-        "line_audio": "1dfe43ac3a7dd42e"
+        "start_s": 4.22,
+        "line_audio": "a9ab391693c2bd63"
       },
       {
         "line": "Spre apus, dar stau grămadă",
-        "start_s": 5.37,
-        "line_audio": "5534614cb4b9ec91"
+        "start_s": 5.56,
+        "line_audio": "f1173541e3824647"
       },
       {
         "line": "Peste sat.",
-        "start_s": 7.46,
-        "line_audio": "7880d466dd282650"
+        "start_s": 7.5,
+        "line_audio": "5e581a3e5293940e"
       }
     ],
     [
       {
         "line": "Nu e soare, dar e bine,",
-        "start_s": 8.2,
-        "line_audio": "e9fe3683b2bdc9e4"
+        "start_s": 8.56,
+        "line_audio": "dc6ca4b42f9ea33a"
       },
       {
         "line": "Și pe râu e numai fum.",
-        "start_s": 10.13,
-        "line_audio": "ffd5294ac8febb16"
+        "start_s": 10.56,
+        "line_audio": "d3b1c8ea98e29d64"
       },
       {
         "line": "Vântu-i liniștit acum,",
-        "start_s": 11.55,
-        "line_audio": "c01df0138927a0aa"
+        "start_s": 12.5,
+        "line_audio": "9f84663dff1617ec"
       },
       {
         "line": "Dar năvalnic vuiet vine",
-        "start_s": 14.09,
-        "line_audio": "e2fe32f2ee95d2db"
+        "start_s": 14.18,
+        "line_audio": "42af7b7ec8572f1f"
       },
       {
         "line": "De pe drum.",
-        "start_s": 15.82,
-        "line_audio": "3d1914a9beed6014"
+        "start_s": 15.84,
+        "line_audio": "1a34d02dcdcd2b1c"
       }
     ],
     [
       {
         "line": "Sunt copii. Cu multe sănii,",
-        "start_s": 16.84,
-        "line_audio": "d853bce24f40a41b"
+        "start_s": 16.96,
+        "line_audio": "14811c4d5d7ca9bf"
       },
       {
         "line": "De pe coastă vin țipând",
-        "start_s": 19.32,
-        "line_audio": "0eff84946a65c35b"
+        "start_s": 18.92,
+        "line_audio": "f6af5c4e2254d041"
       },
       {
         "line": "Și se-mping și sar râzând;",
-        "start_s": 21.16,
-        "line_audio": "076867db10720d9e"
+        "start_s": 20.54,
+        "line_audio": "011f4849c5509ad9"
       },
       {
         "line": "Prin zăpadă fac mătănii;",
-        "start_s": 23.8,
-        "line_audio": "6ef724ad1de5b25d"
+        "start_s": 22.66,
+        "line_audio": "4b35f431a0e49049"
       },
       {
         "line": "Vrând-nevrând.",
-        "start_s": 25.65,
-        "line_audio": "80baf243107d05b4"
+        "start_s": 24.44,
+        "line_audio": "17438cfe207a514c"
       }
     ],
     [
       {
         "line": "Gură fac ca roata morii;",
-        "start_s": 28.03,
-        "line_audio": "77721d025bb70aa1"
+        "start_s": 25.6,
+        "line_audio": "dae250a74e35c4fb"
       },
       {
         "line": "Și de-a valma se pornesc,",
-        "start_s": 29.7,
-        "line_audio": "3a389d6b9473aae1"
+        "start_s": 27.42,
+        "line_audio": "f0fd9f92ec9b17dc"
       },
       {
         "line": "Cum prin gard se gâlcevesc",
-        "start_s": 31.7,
-        "line_audio": "9dd5c4433b034617"
+        "start_s": 29.08,
+        "line_audio": "f3180f0c0c7296fe"
       },
       {
         "line": "Vrăbii gureșe, când norii",
-        "start_s": 33.54,
-        "line_audio": "616ecfc72720767b"
+        "start_s": 30.94,
+        "line_audio": "6cb69c7f25e26c53"
       },
       {
         "line": "Ploi vestesc.",
-        "start_s": 35.54,
-        "line_audio": "3640cb0350d93e2e"
+        "start_s": 32.7,
+        "line_audio": "869bb05411d606c8"
       }
     ],
     [
       {
         "line": "Cei mai mari acum, din sfadă,",
-        "start_s": 36.82,
-        "line_audio": "c8a71944ab05d0a3"
+        "start_s": 33.98,
+        "line_audio": "e26cc358b4bd8328"
       },
       {
         "line": "Stau pe-ncăierate puși;",
-        "start_s": 39.3,
-        "line_audio": "f8f0fd2faea7fc78"
+        "start_s": 36.1,
+        "line_audio": "b4353f81a92f6caf"
       },
       {
         "line": "Cei mai mici, de foame-aduși,",
-        "start_s": 41.74,
-        "line_audio": "d4e785289b343cfd"
+        "start_s": 37.82,
+        "line_audio": "e22187621cd3b4e1"
       },
       {
         "line": "Se scâncesc și plâng grămadă",
-        "start_s": 44.0,
-        "line_audio": "8a142fdf50bd5109"
+        "start_s": 39.82,
+        "line_audio": "a31843c7f4c02f45"
       },
       {
         "line": "Pe la uși.",
-        "start_s": 46.35,
-        "line_audio": "8402e6cfa46f0674"
+        "start_s": 41.76,
+        "line_audio": "315b9456befff9d2"
       }
     ],
     [
       {
         "line": "Colo-n colț acum răsare",
-        "start_s": 46.69,
-        "line_audio": "d29800a6ac215b95"
+        "start_s": 42.78,
+        "line_audio": "c5ecb4b849c957fc"
       },
       {
         "line": "Un copil, al nu știu cui,",
-        "start_s": 49.45,
-        "line_audio": "0ec11f56b307706b"
+        "start_s": 44.6,
+        "line_audio": "ee63b500ee18e024"
       },
       {
         "line": "Largi de-un cot sunt pașii lui,",
-        "start_s": 51.45,
-        "line_audio": "1d7c033738f61554"
+        "start_s": 46.68,
+        "line_audio": "993d15a7b73585be"
       },
       {
         "line": "Iar el mic, căci pe cărare",
-        "start_s": 53.94,
-        "line_audio": "1c7d7afa28f2cd2c"
+        "start_s": 48.64,
+        "line_audio": "0d13936c09abd977"
       },
       {
         "line": "Parcă nu-i.",
-        "start_s": 56.42,
-        "line_audio": "67940a1355182077"
+        "start_s": 50.6,
+        "line_audio": "54a01cbe9cecce15"
       }
     ],
     [
       {
         "line": "Haina-i măturând pământul",
-        "start_s": 56.65,
-        "line_audio": "da6a81441a940635"
+        "start_s": 51.58,
+        "line_audio": "4aee44fbc358b708"
       },
       {
         "line": "Și-o târăște-abia, abia:",
-        "start_s": 59.24,
-        "line_audio": "a53a5f978fc8e963"
+        "start_s": 53.22,
+        "line_audio": "7e846d361e56fde7"
       },
       {
         "line": "Cinci ca el încap în ea,",
-        "start_s": 62.12,
-        "line_audio": "426cbe58f59d1b02"
+        "start_s": 55.16,
+        "line_audio": "f0baed9e5ca02af7"
       },
       {
         "line": "Să mai bată, soro, vântul",
-        "start_s": 63.74,
-        "line_audio": "ab4db40874f60f9d"
+        "start_s": 56.82,
+        "line_audio": "e258500fbe30fa3d"
       },
       {
         "line": "Dac-o vrea!",
-        "start_s": 65.48,
-        "line_audio": "b729db8500fc66a7"
+        "start_s": 58.38,
+        "line_audio": "3d15192564099de6"
       }
     ],
     [
       {
         "line": "El e sol precum se vede,",
-        "start_s": 67.85,
-        "line_audio": "f6266bf4a1766de8"
+        "start_s": 59.4,
+        "line_audio": "1566b30474a902b7"
       },
       {
         "line": "Mă-sa l-a trimis în sat,",
-        "start_s": 69.38,
-        "line_audio": "46d34bdeb6c3f744"
+        "start_s": 61.24,
+        "line_audio": "85bc110ce5999ecc"
       },
       {
         "line": "Vezi de-aceea-i încruntat,",
-        "start_s": 71.22,
-        "line_audio": "49567be2b757b375"
+        "start_s": 62.84,
+        "line_audio": "47c8a81ee4670445"
       },
       {
         "line": "Și s-avântă, și se crede",
-        "start_s": 73.06,
-        "line_audio": "58a7910f63876559"
+        "start_s": 64.48,
+        "line_audio": "1def11ff68cd26dc"
       },
       {
         "line": "Că-i bărbat;",
-        "start_s": 74.6,
-        "line_audio": "b3e9ac517cf7f435"
+        "start_s": 66.14,
+        "line_audio": "953bf8c09f879c28"
       }
     ],
     [
       {
         "line": "Cade-n brânci și se ridică",
-        "start_s": 77.41,
-        "line_audio": "ddf178208d2e9af2"
+        "start_s": 67.16,
+        "line_audio": "b56b16c9f7ecef70"
       },
       {
         "line": "Dând pe ceafă puțintel",
-        "start_s": 79.3,
-        "line_audio": "f2e097b1758f4ff5"
+        "start_s": 69.1,
+        "line_audio": "51753322a76cce47"
       },
       {
         "line": "Toată lâna unui miel:",
-        "start_s": 81.1,
-        "line_audio": "b8a99788dd793af0"
+        "start_s": 70.66,
+        "line_audio": "2ba71201cf0da8dd"
       },
       {
         "line": "O căciulă mai voinică",
-        "start_s": 82.51,
-        "line_audio": "a035fc59c261e8f0"
+        "start_s": 72.22,
+        "line_audio": "c68b88e6dcc95ba1"
       },
       {
         "line": "Decât el.",
-        "start_s": 84.31,
-        "line_audio": "f8027d176c4759a2"
+        "start_s": 73.48,
+        "line_audio": "cadc375931faf6b9"
       }
     ],
     [
       {
         "line": "Și tot vine, tot înoată,",
-        "start_s": 85.27,
-        "line_audio": "3978adfc3059268c"
+        "start_s": 74.44,
+        "line_audio": "1e7d885d6d6246bc"
       },
       {
         "line": "Dar deodată cu ochi vii,",
-        "start_s": 88.27,
-        "line_audio": "2dde8c03352d2ae7"
+        "start_s": 76.58,
+        "line_audio": "411bd186771010da"
       },
       {
         "line": "Stă pe loc - să mi te ții!",
-        "start_s": 89.95,
-        "line_audio": "cceb9463fdf80b9f"
+        "start_s": 78.28,
+        "line_audio": "acc528a84e82960d"
       },
       {
         "line": "Colo, zgomotoasa gloată,",
-        "start_s": 93.35,
-        "line_audio": "d9d1068848ffe378"
+        "start_s": 80.3,
+        "line_audio": "785b72122eff4bcf"
       },
       {
         "line": "De copii!",
-        "start_s": 95.27,
-        "line_audio": "d6733cfc941d9f4a"
+        "start_s": 82.28,
+        "line_audio": "ec7839147ff48d70"
       }
     ],
     [
       {
         "line": "El degrabă-n jur chitește",
-        "start_s": 96.16,
-        "line_audio": "e47e99db35f4d736"
+        "start_s": 83.26,
+        "line_audio": "d6f4a4aa20612eed"
       },
       {
         "line": "Vrun ocol, căci e pierdut,",
-        "start_s": 98.43,
-        "line_audio": "0d4c76092d24899c"
+        "start_s": 85.06,
+        "line_audio": "bf19a03bb360616d"
       },
       {
         "line": "Dar copiii l-au văzut!",
-        "start_s": 100.53,
-        "line_audio": "805505fa05dd4346"
+        "start_s": 87.06,
+        "line_audio": "9a19864b4e529cca"
       },
       {
         "line": "Toată ceata năvălește",
-        "start_s": 103.45,
-        "line_audio": "9ef3c9b2c1b9578d"
+        "start_s": 88.7,
+        "line_audio": "4e7f42577675c528"
       },
       {
         "line": "Pe-ntrecut.",
-        "start_s": 103.45,
-        "line_audio": "91a7b4700aa851cb"
+        "start_s": 90.14,
+        "line_audio": "10efc72db3de8f9d"
       }
     ],
     [
       {
         "line": "- \"Uite-i, mă, căciula, frate,",
-        "start_s": 104.86,
-        "line_audio": "38a68dfed51ff587"
+        "start_s": 91.22,
+        "line_audio": "0cab4d2911d04cf8"
       },
       {
         "line": "Mare cât o zi de post -",
-        "start_s": 108.53,
-        "line_audio": "7ecd7f6e03413321"
+        "start_s": 93.08,
+        "line_audio": "8d2a88827ce24833"
       },
       {
         "line": "Aoleu, ce urs mi-a fost!",
-        "start_s": 110.54,
-        "line_audio": "9595d441e4205a41"
+        "start_s": 94.86,
+        "line_audio": "05ff5bac77ed61b7"
       },
       {
         "line": "Au sub dânsa șapte sate",
-        "start_s": 112.99,
-        "line_audio": "76d2eac9bacce254"
+        "start_s": 97.04,
+        "line_audio": "6c92d1d57e7fadd5"
       },
       {
         "line": "Adăpost!",
-        "start_s": 112.99,
-        "line_audio": "b538a894741f1dfe"
+        "start_s": 98.72,
+        "line_audio": "4d56a2884d3abbf2"
       }
     ],
     [
       {
         "line": "Unii-l iau grăbit la vale,",
-        "start_s": 116.18,
-        "line_audio": "05b79f27d341e17b"
+        "start_s": 99.74,
+        "line_audio": "0973855e8a75715d"
       },
       {
         "line": "Alții-n glumă parte-i țin -",
-        "start_s": 118.12,
-        "line_audio": "4d88ee70ee931d09"
+        "start_s": 101.46,
+        "line_audio": "1a18e977a8a8017d"
       },
       {
         "line": "Uite-i, fără pic de vin",
-        "start_s": 119.84,
-        "line_audio": "338a9a53468967e8"
+        "start_s": 103.3,
+        "line_audio": "6af8cf7dca5a853c"
       },
       {
         "line": "S-au jurat să-mbete-n cale",
-        "start_s": 121.96,
-        "line_audio": "779a6d22a0c37432"
+        "start_s": 105.08,
+        "line_audio": "f069c8f15694d8c3"
       },
       {
         "line": "Pe creștin!",
-        "start_s": 124.49,
-        "line_audio": "0db73b465436b9c1"
+        "start_s": 106.66,
+        "line_audio": "e3387b2161e8fd12"
       }
     ],
     [
       {
         "line": "Vine-o babă-ncet pe stradă",
-        "start_s": 126.63,
-        "line_audio": "577e8e46413953f6"
+        "start_s": 107.76,
+        "line_audio": "fb4b6b7c85f439e3"
       },
       {
         "line": "În cojocul rupt al ei",
-        "start_s": 129.02,
-        "line_audio": "b1f7ae4d9c0ff710"
+        "start_s": 109.5,
+        "line_audio": "aea9f05c2af8a587"
       },
       {
         "line": "Și încins cu sfori de tei.",
-        "start_s": 130.5,
-        "line_audio": "80d7bce9bf51cb00"
+        "start_s": 111.06,
+        "line_audio": "9c79f5ff0a39d5ae"
       },
       {
         "line": "Stă pe loc acum să vadă",
-        "start_s": 132.88,
-        "line_audio": "aeb1e2f8be4f080d"
+        "start_s": 112.94,
+        "line_audio": "0402a251de8b6124"
       },
       {
         "line": "Și ea ce-i.",
-        "start_s": 135.11,
-        "line_audio": "3ba07ca1ee55f4fb"
+        "start_s": 114.58,
+        "line_audio": "c1de1d1cc45d76cc"
       }
     ],
     [
       {
         "line": "S-oțărăște rău bătrâna",
-        "start_s": 136.24,
-        "line_audio": "15aa5ab2f9dbc8fa"
+        "start_s": 115.64,
+        "line_audio": "1154e70d292505bb"
       },
       {
         "line": "Pentru micul Barba-cot.",
-        "start_s": 138.4,
-        "line_audio": "a1114489fc44254b"
+        "start_s": 117.18,
+        "line_audio": "429fa9e35cd8b65f"
       },
       {
         "line": "- \"Ați înnebunit de tot -",
-        "start_s": 139.33,
-        "line_audio": "2a690feb6b07a6b3"
+        "start_s": 118.9,
+        "line_audio": "458a71001cb2b03e"
       },
       {
         "line": "Puiul mamii, dă-mi tu mâna",
-        "start_s": 142.48,
-        "line_audio": "a751fa6d93bbb41f"
+        "start_s": 120.44,
+        "line_audio": "965fa832c828ad46"
       },
       {
         "line": "Să te scot!",
-        "start_s": 144.67,
-        "line_audio": "ea7b8fefd331cb8b"
+        "start_s": 122.16,
+        "line_audio": "b2c5f5e3a0fa8c50"
       }
     ],
     [
       {
         "line": "Cică vrei să stingi cu paie",
-        "start_s": 145.98,
-        "line_audio": "5dc81dc1291b361d"
+        "start_s": 123.08,
+        "line_audio": "5710b5ad40962a31"
       },
       {
         "line": "Focul când e-n clăi cu fân,",
-        "start_s": 147.81,
-        "line_audio": "5b43460908c0ebd7"
+        "start_s": 124.82,
+        "line_audio": "760dbed364f35d83"
       },
       {
         "line": "Și-apoi zici că ești român!",
-        "start_s": 149.83,
-        "line_audio": "417ccc347160ab88"
+        "start_s": 126.54,
+        "line_audio": "36e6e7a7b9c5f82c"
       },
       {
         "line": "Biata bab-a-ntrat în laie",
-        "start_s": 153.33,
-        "line_audio": "1cb3ff960c99a658"
+        "start_s": 128.36,
+        "line_audio": "e114f0b1f34e2f60"
       },
       {
         "line": "La stăpân.",
-        "start_s": 155.21,
-        "line_audio": "efc25fc122dace2d"
+        "start_s": 130.0,
+        "line_audio": "308c1d4d082a2e24"
       }
     ],
     [
       {
         "line": "Ca pe-o bufniț-o-nconjoară",
-        "start_s": 156.34,
-        "line_audio": "fff5cf8919dcae69"
+        "start_s": 130.94,
+        "line_audio": "c105ed573470f5cd"
       },
       {
         "line": "Și-o petrec cu chiu cu vai,",
-        "start_s": 156.59,
-        "line_audio": "0ff77c055a2f85a1"
+        "start_s": 132.56,
+        "line_audio": "e224ed3293706328"
       },
       {
         "line": "Și se țin de dânsa scai,",
-        "start_s": 160.28,
-        "line_audio": "4289eacab2224eba"
+        "start_s": 134.38,
+        "line_audio": "56c31408263886f8"
       },
       {
         "line": "Plină-i strâmta ulicioară",
-        "start_s": 161.85,
-        "line_audio": "3126fb5043e72bd1"
+        "start_s": 136.12,
+        "line_audio": "0fa0bb2887337982"
       },
       {
         "line": "De alai.",
-        "start_s": 164.49,
-        "line_audio": "4542f87a6c00da34"
+        "start_s": 137.56,
+        "line_audio": "f49cd07dd536ea45"
       }
     ],
     [
       {
         "line": "Nu e chip să-i faci cu buna",
-        "start_s": 164.49,
-        "line_audio": "10c73590a5c17cdc"
+        "start_s": 138.42,
+        "line_audio": "148e387345ed4820"
       },
       {
         "line": "Să-și păzească drumul lor!",
-        "start_s": 167.12,
-        "line_audio": "2b5a89f732937c01"
+        "start_s": 139.9,
+        "line_audio": "e90dbeb2f5dbb7e0"
       },
       {
         "line": "Râd și sar într-un picior,",
-        "start_s": 170.02,
-        "line_audio": "d6b4099a287c9c3d"
+        "start_s": 141.68,
+        "line_audio": "6d1b6148f52ef52f"
       },
       {
         "line": "Se-nvârtesc și țipă-ntruna",
-        "start_s": 172.11,
-        "line_audio": "0df1ed6a1179eb67"
+        "start_s": 143.38,
+        "line_audio": "7d1628656e2fa0b2"
       },
       {
         "line": "Mai cu zor.",
-        "start_s": 174.6,
-        "line_audio": "25afb231cbd7cce0"
+        "start_s": 145.04,
+        "line_audio": "ba624a17ec5d6bb2"
       }
     ],
     [
       {
         "line": "Baba și-a uitat învățul:",
-        "start_s": 176.49,
-        "line_audio": "f8a77af01db5d3e2"
+        "start_s": 146.08,
+        "line_audio": "5b9a79f329284eaf"
       },
       {
         "line": "Bate,-njură, dă din mâini:",
-        "start_s": 178.93,
-        "line_audio": "fb499288f07f12c4"
+        "start_s": 147.88,
+        "line_audio": "ccb92446c2924c52"
       },
       {
         "line": "- \"Dracilor, sunteți păgâni?",
-        "start_s": 179.86,
-        "line_audio": "ebf166c8bb452e32"
+        "start_s": 149.92,
+        "line_audio": "1fd1299a9bc130d9"
       },
       {
         "line": "Maica mea! Să stai cu bățul",
-        "start_s": 183.24,
-        "line_audio": "bea6a7531c28d935"
+        "start_s": 151.88,
+        "line_audio": "5d9823f7d6eb1569"
       },
       {
         "line": "Ca la câini!",
-        "start_s": 185.63,
-        "line_audio": "bc4b7f5f6ec828b1"
+        "start_s": 153.84,
+        "line_audio": "6d5591bf5d65027d"
       }
     ],
     [
       {
         "line": "Și cu bățul se-nvârtește",
-        "start_s": 187.0,
-        "line_audio": "5ec8a5cb52886238"
+        "start_s": 154.86,
+        "line_audio": "5ef82dbd0a114a14"
       },
       {
         "line": "Ca să-și facă-n jur ocol;",
-        "start_s": 189.47,
-        "line_audio": "038df310a7b6a479"
+        "start_s": 156.42,
+        "line_audio": "dfe6de89a16c2958"
       },
       {
         "line": "Dar abia e locul gol,",
-        "start_s": 191.52,
-        "line_audio": "7aaafebe5ea5de84"
+        "start_s": 158.1,
+        "line_audio": "0406293a037eff46"
       },
       {
         "line": "Și mulțimea năvălește",
-        "start_s": 192.89,
-        "line_audio": "0be2479f40b50b43"
+        "start_s": 159.62,
+        "line_audio": "c7b0b1dd49c448bc"
       },
       {
         "line": "Iarăși stol.",
-        "start_s": 194.96,
-        "line_audio": "3527eee4f5473cb5"
+        "start_s": 161.0,
+        "line_audio": "6677ceece8a6a18e"
       }
     ],
     [
       {
         "line": "Astfel tabăra se duce",
-        "start_s": 197.45,
-        "line_audio": "d3639bb5309ebdf5"
+        "start_s": 162.24,
+        "line_audio": "769604140e747a37"
       },
       {
         "line": "Lălăind în chip avan:",
-        "start_s": 199.13,
-        "line_audio": "2040b3999ed91d7a"
+        "start_s": 163.74,
+        "line_audio": "bc6769bceff9f1b5"
       },
       {
         "line": "Baba-n mijloc, căpitan,",
-        "start_s": 200.47,
-        "line_audio": "657c747b70f4aea8"
+        "start_s": 165.36,
+        "line_audio": "d1d6afc75f0de398"
       },
       {
         "line": "Scuipă-n sân și face cruce",
-        "start_s": 202.28,
-        "line_audio": "e79672aabffedfcf"
+        "start_s": 167.16,
+        "line_audio": "d50cd2f25c6186cc"
       },
       {
         "line": "De Satan.",
-        "start_s": 205.66,
-        "line_audio": "b8e3af13529b5bcc"
+        "start_s": 168.9,
+        "line_audio": "283734f627e8a19d"
       }
     ],
     [
       {
         "line": "Ba se răscolesc și câinii",
-        "start_s": 206.82,
-        "line_audio": "331d60cb1c6cdf08"
+        "start_s": 169.82,
+        "line_audio": "39a49a40e24c2011"
       },
       {
         "line": "De prin curți, și sar la ei.",
-        "start_s": 209.02,
-        "line_audio": "068ad1428065121f"
+        "start_s": 171.32,
+        "line_audio": "d784c062f6794ac5"
       },
       {
         "line": "Pe la garduri ies femei,",
-        "start_s": 211.43,
-        "line_audio": "341112809257672b"
+        "start_s": 173.28,
+        "line_audio": "c85cc2426756cb98"
       },
       {
         "line": "Se urnesc mirați bătrânii",
-        "start_s": 213.36,
-        "line_audio": "6b192c969cc8532a"
+        "start_s": 175.26,
+        "line_audio": "6d50cb0320fca87e"
       },
       {
         "line": "Din bordei.",
-        "start_s": 215.84,
-        "line_audio": "995d058c8bb65a2a"
+        "start_s": 177.02,
+        "line_audio": "25300e9a2f59e3f7"
       }
     ],
     [
       {
         "line": "- \"Ce-i pe drum atâta gură?",
-        "start_s": 215.84,
-        "line_audio": "29f24f4acf7cfef1"
+        "start_s": 178.08,
+        "line_audio": "b94dcdfbfad8dfe6"
       },
       {
         "line": "- \"Nu-i nimic. Copii ștrengari.",
-        "start_s": 218.65,
-        "line_audio": "b3fc2bce68771c23"
+        "start_s": 179.86,
+        "line_audio": "31e3e9d81cc88181"
       },
       {
         "line": "- \"Ei, auzi! Vedea-i-aș mari,",
-        "start_s": 221.14,
-        "line_audio": "066412ce45d3d31e"
+        "start_s": 181.96,
+        "line_audio": "50be07eb638ef544"
       },
       {
         "line": "Parcă trece-adunătură",
-        "start_s": 224.91,
-        "line_audio": "e34f47f11cd73cf9"
+        "start_s": 184.14,
+        "line_audio": "dec2cc1e68449514"
       },
       {
         "line": "De tătari!",
-        "start_s": 227.11,
-        "line_audio": "02c0e9041b6968f7"
+        "start_s": 185.42,
+        "line_audio": "608fee4987114400"
       }
     ]
   ],
